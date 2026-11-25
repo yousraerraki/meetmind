@@ -1,182 +1,155 @@
 # MeetMind — Assistant intelligent de comptes rendus de réunion
 
-Projet NLP · **Yousra Erraki** · 2026-2027
+**Yousra Erraki** · Projet NLP · EMSI 2026-2027
 
-MeetMind transforme automatiquement la transcription (ou l'audio) d'une réunion en un **compte rendu structuré** :
-résumé global et par sujet, **décisions prises**, **actions à réaliser** (tâche · responsable · échéance).
+MeetMind transforme automatiquement une réunion (texte, fichier ou audio) en **compte rendu structuré** :
 
-| Ce qui est livré | Où |
+- résumé global et sujets abordés,
+- décisions prises,
+- actions à réaliser (tâche · responsable · échéance).
+
+La réunion peut être en **français**, en **anglais** ou en **darija**.
+
+![Compte rendu généré par MeetMind](docs/compte_rendu.png)
+
+## Fonctionnalités
+
+- **Entrées acceptées** :
+  - texte collé ;
+  - fichiers `.txt`, `.docx`, `.pdf` ;
+  - sous-titres Teams/Zoom (`.vtt` / `.srt`) ;
+  - audio `.mp3` / `.wav` ;
+  - enregistrement direct au micro dans le navigateur.
+- **Pipeline NLP en 6 étapes**. Le résumé, les décisions et les actions sont calculés en parallèle.
+- **Dates résolues** : « vendredi », « d'ici la fin du mois », darija « ghedda » ou « 9bel jem3a » deviennent de vraies dates.
+- **Historique** avec recherche, édition du compte rendu, et suivi des actions (à faire / en cours / fait).
+- **Export** en PDF, Word ou texte, et **envoi par e-mail** aux participants (SMTP).
+- **Tout tourne en local**. Les données de réunion ne quittent pas la machine.
+
+![Suivi des actions](docs/suivi_actions.png)
+
+## Stack technique
+
+| Couche | Technologies |
 |---|---|
-| API FastAPI (pipeline 6 étapes, historique, édition, export, e-mail, suivi des actions) | `backend/` |
-| Interface **React** (principale) | `frontend-react/` |
-| Interface **Streamlit** (prototype) | `frontend/streamlit_app.py` |
-| Lancement complet **Docker + PostgreSQL** | `docker-compose.yml` |
-| **Notebook Colab** : fine-tuning CamemBERT, comparaison BARThez/mT5, évaluation | `notebooks/MeetMind_Colab.ipynb` |
-| Diarisation audio (qui parle ?) | `backend/app/nlp/diarization.py` |
-| 4 réunions d'exemple annotées + 285 phrases étiquetées | `data/` |
-| Scripts d'entraînement et d'évaluation | `training/`, `evaluation/` |
-| Tests (pipeline + API, SQLite et PostgreSQL) | `tests/` |
+| Backend | Python, FastAPI, SQLAlchemy, PostgreSQL (SQLite en développement) |
+| Frontend | React (Vite), servi par nginx ; prototype Streamlit |
+| NLP | Hugging Face Transformers, PyTorch, spaCy, Sentence-BERT, scikit-learn |
+| Déploiement | Docker, Docker Compose |
 
----
+| Tâche NLP | Modèle | Solution de secours |
+|---|---|---|
+| Speech-to-text | **Whisper** (small) avec vocabulaire du domaine | — |
+| Résumé abstractif | **BARThez** (orangesum) | TextRank extractif |
+| Classification des phrases (décision / action / information) | **CamemBERT fine-tuné** | TF-IDF + régression logistique, puis règles |
+| Responsables et échéances | **spaCy** (entités PER) + règles de dates FR/darija | liste des participants |
+| Segmentation thématique | **Sentence-BERT** + clustering contigu | TF-IDF + TextTiling |
 
-## 1. Démarrage
+## Architecture
 
-### Option A — Docker (le plus simple : tout en une commande)
+```
+Entrée (React)      texte · fichier · audio · micro
+      │
+1. Transcription    Whisper (+ diarisation pyannote, optionnelle)
+2. Prétraitement    nettoyage, locuteurs, segmentation en sujets
+      ├──────────────────┬──────────────────┐   en parallèle
+3a. Résumé          3b. Décisions       3c. Actions + NER
+      └──────────────────┴──────────────────┘
+4. Compte rendu     fusion en un document structuré
+5. Stockage         PostgreSQL
+6. Export           PDF · Word · e-mail
+```
+
+## Résultats
+
+Évaluation sur 5 réunions de test, jamais vues pendant le développement :
+
+| Configuration | ROUGE-L résumé | F1 décisions | F1 actions |
+|---|---|---|---|
+| Règles seules + TextRank | **0,357** | 0,53 | 0,32 |
+| TF-IDF + règles | **0,357** | 0,65 | 0,49 |
+| **CamemBERT fine-tuné + BARThez** (configuration finale) | 0,247 | **0,76** | **0,80** |
+
+- CamemBERT au niveau des phrases : **F1 décision 0,82**, **F1 action 0,90**.
+- Quand une action est trouvée, son responsable est correct dans **100 %** des cas et son échéance dans **~93 %**.
+- BARThez rédige des résumés plus naturels, mais il a été entraîné sur de la presse et ne connaît pas la darija. Pour maximiser ROUGE, il faut utiliser `SUMMARIZER=extractive`.
+
+Analyse détaillée : [`evaluation/RESULTATS.md`](evaluation/RESULTATS.md).
+
+## Démarrage rapide (Docker)
 
 ```bash
+git clone https://github.com/yousraerraki/meetmind.git
+cd meetmind
+cp .env.example .env          # puis remplir SMTP_* pour l'envoi d'e-mails
 docker compose up --build
 ```
-- Interface React : **http://localhost:8080**
-- API / Swagger : http://localhost:8000/docs
-- Base PostgreSQL incluse (volume persistant)
 
-Options :
+- Interface : http://localhost:8080
+- API (Swagger) : http://localhost:8000/docs
+
+Pour avoir les vrais modèles (Whisper, BARThez, spaCy, Sentence-BERT ; image d'environ 2,5 Go) :
+
 ```bash
-docker compose --profile streamlit up --build      # + interface Streamlit sur :8501
-docker compose --profile llm up --build            # + Ollama (résumé Mistral en local) : docker compose exec ollama ollama pull mistral
-INSTALL_NLP=true docker compose up --build         # image API avec Whisper, BARThez, spaCy (CPU, ~2,5 Go)
+INSTALL_NLP=true docker compose up --build
 # PowerShell : $env:INSTALL_NLP="true"; docker compose up --build
 ```
 
-### Option B — En local (développement)
+Sans ces modèles, l'application fonctionne quand même avec les solutions de secours.
+
+### CamemBERT fine-tuné
+
+Le modèle entraîné n'est pas versionné, car il est trop volumineux. Pour l'obtenir :
+
+1. Ouvrir [`notebooks/MeetMind_CamemBERT_autonome.ipynb`](notebooks/MeetMind_CamemBERT_autonome.ipynb) dans Google Colab (GPU T4).
+2. Tout exécuter.
+3. Décompresser le modèle produit dans `models/camembert-meetmind/`. L'API le charge automatiquement.
+
+## Développement local
 
 ```bash
-python -m venv .venv && source .venv/bin/activate        # Windows : .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env                                     # NLP_MODE=light pour démarrer sans modèles
-
-uvicorn backend.app.main:app --reload                    # terminal 1 — API      :8000
-cd frontend-react && npm install && npm run dev          # terminal 2 — React    :5173
-# ou : streamlit run frontend/streamlit_app.py           #             Streamlit :8501
+python -m venv .venv && source .venv/bin/activate     # Windows : .venv\Scripts\activate
+pip install -r requirements.txt                       # + requirements-nlp.txt pour les modèles
+uvicorn backend.app.main:app --reload                 # API      → :8000
+cd frontend-react && npm install && npm run dev       # React    → :5173
+pytest -q                                             # tests
 ```
 
-Dans l'interface : **Nouvelle réunion → « Charger un exemple » → Générer le compte rendu**.
-
-## 2. Architecture (section 8 du cahier des charges)
-
-```
-1. Entrée (React / Streamlit)   texte · .txt · .docx · .vtt/.srt (Teams, Zoom) · audio .mp3/.wav
-        │                                     ┌── backend FastAPI ───────────────────────────────┐
-2. Transcription  Whisper (+ pyannote)        │ nlp/transcription.py · nlp/diarization.py
-3. Prétraitement  nettoyage, locuteurs, sujets│ nlp/preprocessing.py
-        ├──────────────┬──────────────┐       │  exécutés EN PARALLÈLE (ThreadPoolExecutor)
-4a. Résumé        4b. Décisions   4c. Actions │ nlp/summarizer.py · decisions.py · actions.py + ner.py
-        └──────────────┴──────────────┘       │
-5. Compte rendu   fusion en un document       │ nlp/pipeline.py
-6a. Stockage      PostgreSQL / SQLite         │ db.py
-6b. Export        PDF · Word · e-mail         │ export/
-                                              └──────────────────────────────────────────────────┘
-```
-
-| Tâche NLP | Modèle (mode complet) | Fallback (sans modèle) |
-|---|---|---|
-| Speech-to-Text | Whisper | — |
-| Diarisation | pyannote 3.1 | une ligne par segment |
-| Résumé abstractif | BARThez / mT5 / BART, ou Mistral·Llama 3 via Ollama | TextRank extractif |
-| Classification de phrases | CamemBERT fine-tuné (+ règles si le modèle hésite) | règles linguistiques |
-| NER responsables / dates | spaCy `fr_core_news_lg` (PER) + règles de dates | participants + règles |
-| Segmentation thématique | Sentence-BERT + clustering hiérarchique contigu | TF-IDF + TextTiling |
-
-- **Dates :** les modèles spaCy français n'ont pas d'étiquette `DATE`. `ner.py` détecte **et résout** les échéances
-  (« vendredi », « d'ici la fin du mois », « le 20 novembre », darija « ghedda », « 9bel jem3a »…) en vraies dates.
-- **Darija :** marqueurs de décision (*ttafa9na, 9rrna*), d'action (*ghadi n…, khassek…*) et de dates.
-- **Confidentialité :** tout tourne en local (Ollama pour le LLM) ; l'audio est supprimé après transcription.
-- Chaque compte rendu indique les modèles réellement utilisés (`GET /health`, onglet *Transcription*).
-
-## 3. Mode complet (vrais modèles)
-
-```bash
-pip install -r requirements-nlp.txt
-python -m spacy download fr_core_news_lg
-# + ffmpeg pour Whisper
-```
-Dans `.env` : `NLP_MODE=auto` (modèles si disponibles, sinon fallback) ou `full` (erreur si un modèle manque).
-
-- `SUMMARIZER=barthez` (défaut) · `mt5` · `bart` (anglais) · `llm` (Ollama) · `extractive`
-- `WHISPER_MODEL=small` (`medium` = plus précis)
-- Diarisation : `DIARIZATION=on` + `HF_TOKEN=…` (accepter les conditions de `pyannote/speaker-diarization-3.1`).
-  Dans l'interface, renommez les locuteurs : `SPEAKER_00=Yousra, SPEAKER_01=Rania`.
-
-## 4. Entraînement de CamemBERT → notebook Colab
-
-Ouvrez `notebooks/MeetMind_Colab.ipynb` dans Google Colab (GPU T4), chargez `meetmind.zip`, exécutez tout.
-Le notebook : installe tout, **fine-tune CamemBERT**, produit le **tableau comparatif TextRank / BARThez / mT5**,
-évalue le pipeline complet, teste Whisper sur un audio, et télécharge le modèle entraîné
-(à dézipper dans `models/camembert-meetmind`, chargé automatiquement par l'API).
-
-En ligne de commande :
-```bash
-python training/prepare_data.py vos_transcriptions/*.txt -o data/annotations/mes_reunions.csv   # pré-annotation
-# → corriger la colonne "label" à la main (decision | action | information)
-python training/train_classifier.py --data data/annotations/seed.jsonl data/annotations/reunions_exemple.csv data/annotations/mes_reunions.csv
-```
-Données fournies : `seed.jsonl` (180 phrases écrites à la main, FR/EN/darija) + `reunions_exemple.csv`
-(105 phrases des réunions d'exemple, vérifiées). **Il faut ajouter 300–500 phrases de vraies réunions.**
-
-## 5. Données et évaluation
-
-**Corpus synthétique** (`data/corpus/`, à déclarer comme tel dans le rapport) :
-10 réunions d'entraînement (146 phrases étiquetées) et **5 réunions de test** jamais utilisées
-pendant le développement, avec résumé, décisions et actions de référence.
-
-| Configuration (5 réunions de test) | ROUGE-L | F1 décisions | F1 actions |
-|---|---|---|---|
-| Règles + TextRank | 0,357 ✅ | 0,53 | 0,32 |
-| TF-IDF + règles si incertain (défaut) | 0,357 ✅ | 0,65 | 0,49 |
-| TF-IDF seul (`MODEL_MIN_CONFIDENCE=0`) | 0,357 ✅ | 0,46 | 0,81 ✅ |
-
-Analyse complète : **`evaluation/RESULTATS.md`**.
-
-```bash
-python training/train_tfidf.py --data data/corpus/annotations_train.csv data/annotations/seed.jsonl data/annotations/reunions_exemple.csv --eval data/corpus/annotations_test.csv
-python evaluation/evaluate.py data/corpus/test/*.gold.json --sentences data/corpus/annotations_test.csv
-python evaluation/compare_summarizers.py data/corpus/test/*.gold.json --models extractive barthez mt5
-```
-
-Classifieur utilisé par l'API, dans l'ordre : **CamemBERT fine-tuné** (`models/camembert-meetmind`)
-> **TF-IDF + régression logistique** (entraîné automatiquement dans l'image Docker) > règles.
-
-## 6. API
+## API
 
 | Méthode | Route | Rôle |
 |---|---|---|
-| POST | `/meetings/analyze` | importer (texte / fichier / audio) → compte rendu |
-| GET | `/meetings?q=` | historique + recherche (titre, résumé, transcription, décisions, actions, responsables) |
-| GET / PUT / DELETE | `/meetings/{id}` | consulter / corriger / supprimer |
+| POST | `/meetings/analyze` | texte / fichier / audio → compte rendu |
+| GET | `/meetings?q=` | historique et recherche |
+| GET · PUT · DELETE | `/meetings/{id}` | consulter / corriger / supprimer |
 | GET | `/meetings/{id}/export/{pdf\|docx\|txt}` | export |
-| POST | `/meetings/{id}/email` | envoi aux participants (SMTP dans `.env`) |
-| GET | `/actions?owner=&status=` | suivi des actions (toutes réunions) |
-| PATCH | `/actions/{id}` | statut : à faire / en cours / fait |
+| POST | `/meetings/{id}/email` | envoi aux participants |
+| GET · PATCH | `/actions`, `/actions/{id}` | suivi des actions |
 | GET | `/health` | modèles actifs |
 
-## 7. Tests
-
-```bash
-pytest -q                                                        # SQLite
-DATABASE_URL=postgresql+psycopg2://user@localhost/meetmind pytest -q tests/test_api.py   # PostgreSQL
-```
-
-## 8. Ce qui reste à faire par le binôme
-
-1. **Annoter 300–500 phrases de vraies réunions** et lancer le notebook (fine-tuning CamemBERT).
-2. Remplir le **tableau comparatif** BARThez / mT5 (notebook, section 3) et choisir le modèle de résumé.
-3. Évaluer sur un **jeu de test séparé** et reporter les scores dans le rapport.
-4. Tester Whisper + diarisation sur de vrais enregistrements (temps < 1 min pour 1 h ?).
-
-## 9. Arborescence
+## Arborescence
 
 ```
-backend/app/        main.py (API) · config.py · db.py
-  nlp/              transcription · diarization · preprocessing · summarizer · classifier · ner
-                    decisions · actions · pipeline · schemas · textutils
-  export/           documents.py (PDF, Word, texte) · mailer.py
-frontend-react/     interface React (Vite) + Dockerfile nginx
-frontend/           interface Streamlit
-notebooks/          MeetMind_Colab.ipynb
-training/           prepare_data.py · train_classifier.py
-evaluation/         evaluate.py · compare_summarizers.py · résultats JSON
-data/samples/       4 réunions (projet, marketing, association, darija) + références *.gold.json
-data/annotations/   seed.jsonl · reunions_exemple.csv
-tests/              tests du pipeline et de l'API
-Dockerfile · Dockerfile.streamlit · docker-compose.yml
+backend/app/       API FastAPI · base de données
+  nlp/             transcription · diarisation · prétraitement · résumé · classification · NER · pipeline
+  export/          PDF, Word, e-mail
+frontend-react/    interface React
+frontend/          prototype Streamlit
+notebooks/         fine-tuning CamemBERT (Colab)
+training/          entraînement TF-IDF et CamemBERT
+evaluation/        scripts et résultats (ROUGE, F1)
+data/              corpus annoté (train / test) et réunions d'exemple
+tests/             tests du pipeline et de l'API
 ```
+
+## Données
+
+Le corpus a été rédigé pour le projet : il est synthétique.
+- **Entraînement** : 10 réunions, plus 285 phrases annotées à la main (FR / EN / darija).
+- **Test** : 5 réunions séparées. Chacune a un résumé, des décisions et des actions de référence.
+
+## Limites et pistes
+
+- Le corpus est petit et synthétique. L'étape suivante est d'annoter des réunions réelles.
+- Les transcriptions de test sont parfaites. Il faut encore mesurer l'impact des erreurs de Whisper.
+- Le résumé de la darija reste faible avec BARThez. Un LLM local (Mistral via Ollama, profil `llm`) est déjà disponible en option.

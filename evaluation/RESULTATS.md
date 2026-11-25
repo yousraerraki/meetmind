@@ -22,6 +22,10 @@ Date de référence des réunions : lundi 16/11/2026 (pour résoudre « vendredi
 | Règles seules + TextRank | **0,357** ✅ | 0,53 | 0,32 ❌ | 100 % | 100 % |
 | TF-IDF + régression logistique, règles si incertain (seuil 0,6) — **config. par défaut** | **0,357** ✅ | **0,65** | 0,49 ❌ | 100 % | ~90 % |
 | TF-IDF seul, sans règles *(analyse a posteriori)* | **0,357** ✅ | 0,46 | **0,81** ✅ | — | — |
+| **CamemBERT fine-tuné + BARThez** — **configuration finale** | 0,247 ❌ | **0,76** | **0,80** ✅ | 100 % | ~93 % |
+
+Résumé seul : TextRank (extractif) ROUGE-L **0,357** ✅ · BARThez (abstractif) **0,247**
+(par réunion : 0,32 · 0,34 · 0,32 · **0,06 (darija)** · 0,19).
 
 Objectifs du cahier des charges : ROUGE-L ≥ 0,35 · F1 actions ≥ 0,75.
 
@@ -55,13 +59,20 @@ et 3/3 actions** avec le bon responsable et la bonne échéance (TF-IDF : 1/2 et
    Le seuil est configurable : `MODEL_MIN_CONFIDENCE=0` → modèle seul.
 5. **Responsables et échéances** : quand l'action est trouvée, le responsable est correct dans 100 %
    des cas et l'échéance dans ~90 %.
-6. **Limites** : corpus petit et synthétique ; transcriptions sans erreurs de reconnaissance ;
+6. **Résumé abstractif (BARThez) vs extractif (TextRank)** : BARThez rédige avec ses propres mots,
+   ce qui est plus lisible mais pénalisé par ROUGE (qui compte les mots communs avec la référence).
+   BARThez a été entraîné sur des articles de presse (OrangeSum), pas sur des réunions, et ne comprend
+   pas la darija (ROUGE-L 0,06 sur la réunion en darija). Il peut aussi « halluciner »
+   (ex. « les employés de MaroColis »). Pour atteindre l'objectif ROUGE-L ≥ 0,35 : `SUMMARIZER=extractive`.
+7. **CamemBERT est le meilleur classifieur** : F1 décisions 0,76 et actions 0,80 au niveau des réunions
+   (0,82 / 0,90 au niveau des phrases), contre 0,53 / 0,32 pour les règles.
+8. **Limites** : corpus petit et synthétique ; transcriptions sans erreurs de reconnaissance ;
    temps de traitement d'une heure d'audio non mesuré sur GPU.
 
 ## 4. Prochaines étapes
 
 - ~~Fine-tuner CamemBERT~~ ✅ fait (`notebooks/MeetMind_CamemBERT_autonome.ipynb`) : meilleur modèle.
-- Ajouter des **réunions réelles** annotées par le binôme.
+- Ajouter des **réunions réelles** annotées.
 - Mesurer BARThez / mT5 et le temps de Whisper sur GPU.
 
 ## 5. Reproduire
