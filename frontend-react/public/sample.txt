@@ -1,0 +1,26 @@
+[00:00] Karim : Bonjour à tous, euh, merci d'être là. Alors aujourd'hui on a trois points : le choix du modèle de résumé, la maquette de l'interface et le planning de la démo.
+[00:15] Yousra : Bonjour. Oui oui, pour le modèle de résumé j'ai testé BARThez et mT5 sur une dizaine de transcriptions.
+[00:24] Yousra : BARThez donne de meilleurs résultats en français, le score ROUGE-L est autour de 0,38 alors que mT5 est à 0,31.
+[00:35] Rania : Et le temps de traitement ? Parce que, euh, on doit rester sous une minute pour une heure de réunion.
+[00:42] Yousra : BARThez prend environ quarante secondes sur GPU pour une heure de réunion, donc ça passe.
+[00:50] Karim : Ok, très bien. Donc on part sur BARThez pour le résumé, et on garde Mistral en option si le résultat n'est pas assez bon.
+[00:58] Rania : D'accord, ça me va.
+[01:02] Karim : Yousra, tu peux préparer un petit tableau comparatif des deux modèles avant vendredi ?
+[01:08] Yousra : Oui, je m'en occupe.
+[01:12] Karim : Deuxième point, la maquette de l'interface. Rania, tu en es où ?
+[01:16] Rania : J'ai fait une première version sur Streamlit avec l'import de fichier et l'affichage du résumé.
+[01:24] Rania : Il manque encore le tableau des actions et le bouton d'export en PDF.
+[01:30] Salma : Est-ce qu'on peut ajouter une page pour l'historique des réunions ? Les utilisateurs voudront retrouver les anciennes réunions.
+[01:38] Karim : Oui c'est une bonne idée. Il est décidé d'ajouter une page historique avec une recherche par mot-clé.
+[01:45] Rania : Je vais ajouter le tableau des actions et l'export PDF d'ici mercredi prochain.
+[01:52] Salma : Je me charge de la page historique, je peux la finir pour le 20 novembre.
+[02:00] Karim : Parfait. Troisième point, le planning de la démo devant l'encadrant.
+[02:06] Salma : L'encadrant est disponible le 2 décembre ou le 9 décembre.
+[02:12] Rania : Le 2 décembre c'est un peu juste, on n'aura pas fini l'évaluation sur le corpus AMI.
+[02:18] Karim : Bon, on valide le 9 décembre pour la démo, tout le monde est d'accord ?
+[02:22] Yousra : Oui, c'est validé pour moi.
+[02:25] Karim : Salma, tu peux envoyer l'invitation à l'encadrant demain ?
+[02:29] Salma : Ok pas de souci.
+[02:32] Karim : Et il faut que Yousra lance l'évaluation ROUGE sur le corpus AMI d'ici la fin du mois.
+[02:38] Yousra : Ça marche, je lance ça ce week-end.
+[02:42] Karim : Super, merci à tous, on se revoit la semaine prochaine.

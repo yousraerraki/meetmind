@@ -1,0 +1,17 @@
+Sofia : Bonjour à tous, l'objectif de ce matin est de préparer le lancement de la version 2.
+Adam : Les tests de charge sont terminés, le serveur tient deux mille utilisateurs simultanés.
+Sofia : Très bien, et côté design, où en est-on ?
+Lina : Il reste deux écrans à finaliser, l'onboarding et la page de paiement.
+Sofia : Bon, on retient la date du 1er décembre pour le lancement.
+Adam : Ça me paraît jouable si le design est prêt à temps.
+Sofia : Lina, tu termines les deux écrans d'ici jeudi ?
+Lina : Oui, je m'en occupe.
+Adam : Je vais préparer le plan de retour arrière en cas de problème.
+Sofia : Pour la communication, on avait parlé d'une vidéo de démonstration.
+Lina : Une vidéo coûte cher, environ cinq mille dirhams avec un prestataire.
+Sofia : Finalement on fait la vidéo en interne, pas de prestataire.
+Sofia : Lina se charge du script de la vidéo pour lundi prochain.
+Adam : On pourrait aussi publier un article de blog le jour du lancement.
+Sofia : Bonne idée, on en parlera à la prochaine réunion.
+Sofia : Adam, pense à mettre à jour la documentation de l'API avant le lancement.
+Sofia : Merci à tous, bonne journée.

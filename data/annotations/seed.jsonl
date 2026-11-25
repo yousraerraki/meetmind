@@ -1,0 +1,180 @@
+{"text": "On a décidé de garder PostgreSQL pour la base de données.", "label": "decision"}
+{"text": "Il est convenu que la démo aura lieu le 9 décembre.", "label": "decision"}
+{"text": "On part sur Streamlit pour le prototype.", "label": "decision"}
+{"text": "C'est validé, on utilise BARThez pour le résumé.", "label": "decision"}
+{"text": "Finalement on abandonne l'option React pour cette version.", "label": "decision"}
+{"text": "Nous avons choisi le corpus AMI pour l'évaluation.", "label": "decision"}
+{"text": "On valide le budget de 2000 euros pour les serveurs.", "label": "decision"}
+{"text": "Tout le monde est d'accord pour décaler la réunion à jeudi.", "label": "decision"}
+{"text": "La solution retenue est d'héberger le modèle en local.", "label": "decision"}
+{"text": "On reporte la mise en production au mois de janvier.", "label": "decision"}
+{"text": "Il a été décidé de ne pas stocker les fichiers audio.", "label": "decision"}
+{"text": "On fixe la réunion hebdomadaire le lundi à dix heures.", "label": "decision"}
+{"text": "C'est acté, la version 1 ne gère que le français.", "label": "decision"}
+{"text": "On adopte le format PDF comme export par défaut.", "label": "decision"}
+{"text": "Décision : on limite la démo à trois fonctionnalités.", "label": "decision"}
+{"text": "On garde Mistral comme alternative au résumé abstractif.", "label": "decision"}
+{"text": "Le comité a approuvé le recrutement d'un stagiaire.", "label": "decision"}
+{"text": "On opte pour un entraînement sur GPU Colab.", "label": "decision"}
+{"text": "Donc on retient la deuxième maquette.", "label": "decision"}
+{"text": "We decided to postpone the release to next month.", "label": "decision"}
+{"text": "Je vais préparer le tableau comparatif avant vendredi.", "label": "action"}
+{"text": "Rania, tu peux envoyer le compte rendu aux participants ?", "label": "action"}
+{"text": "Je m'occupe de la page historique d'ici mercredi.", "label": "action"}
+{"text": "Salma se charge de réserver la salle pour la démo.", "label": "action"}
+{"text": "Il faut que Yousra lance l'évaluation ROUGE d'ici la fin du mois.", "label": "action"}
+{"text": "Je me charge de contacter l'encadrant demain.", "label": "action"}
+{"text": "Karim va corriger les bugs de l'export Word.", "label": "action"}
+{"text": "Vous pouvez relire le rapport avant le 15 novembre ?", "label": "action"}
+{"text": "Merci de remplir le fichier d'annotation pour lundi.", "label": "action"}
+{"text": "Je t'envoie la maquette ce soir.", "label": "action"}
+{"text": "Tu pourrais vérifier les dates dans le planning ?", "label": "action"}
+{"text": "N'oubliez pas de déposer vos slides sur le drive avant jeudi.", "label": "action"}
+{"text": "Je finalise la documentation de l'API la semaine prochaine.", "label": "action"}
+{"text": "Yousra doit annoter cinquante transcriptions supplémentaires.", "label": "action"}
+{"text": "Je relance le fournisseur pour le devis.", "label": "action"}
+{"text": "Pense à mettre à jour le README.", "label": "action"}
+{"text": "Je fais la présentation pour la soutenance.", "label": "action"}
+{"text": "Can you send me the slides by Friday?", "label": "action"}
+{"text": "I'll handle the deployment tomorrow.", "label": "action"}
+{"text": "Je prépare les données d'entraînement d'ici dimanche.", "label": "action"}
+{"text": "Bonjour à tous, merci d'être présents.", "label": "information"}
+{"text": "Le score ROUGE-L de BARThez est autour de 0,38.", "label": "information"}
+{"text": "mT5 donne de moins bons résultats en français.", "label": "information"}
+{"text": "La première version de l'interface affiche le résumé.", "label": "information"}
+{"text": "Le corpus AMI contient une centaine d'heures de réunions.", "label": "information"}
+{"text": "On a eu quelques problèmes avec la transcription des accents.", "label": "information"}
+{"text": "Whisper prend environ quarante secondes pour une heure d'audio.", "label": "information"}
+{"text": "L'encadrant est disponible le 2 ou le 9 décembre.", "label": "information"}
+{"text": "Le serveur de test a été redémarré hier.", "label": "information"}
+{"text": "Les utilisateurs se plaignent du temps de chargement.", "label": "information"}
+{"text": "Est-ce qu'on a des retours sur la maquette ?", "label": "information"}
+{"text": "Je pense que c'est une bonne idée.", "label": "information"}
+{"text": "Le client a répondu à notre e-mail ce matin.", "label": "information"}
+{"text": "Il y a trois points à l'ordre du jour.", "label": "information"}
+{"text": "Le modèle spaCy ne détecte pas toujours les noms marocains.", "label": "information"}
+{"text": "Les tests unitaires passent tous.", "label": "information"}
+{"text": "La réunion précédente a duré une heure et demie.", "label": "information"}
+{"text": "On en a déjà parlé la semaine dernière.", "label": "information"}
+{"text": "Ça me paraît un peu juste comme délai.", "label": "information"}
+{"text": "Le budget actuel couvre seulement les licences.", "label": "information"}
+{"text": "Je ne suis pas sûr que ce soit la meilleure approche.", "label": "information"}
+{"text": "Les résultats de la semaine sont encourageants.", "label": "information"}
+{"text": "On n'aura pas fini l'évaluation pour le 2 décembre.", "label": "information"}
+{"text": "Le fichier contient environ trois mille phrases.", "label": "information"}
+{"text": "Merci à tous, bonne fin de journée.", "label": "information"}
+{"text": "Après discussion, on retient le fournisseur B.", "label": "decision"}
+{"text": "On arrête le développement de la version web.", "label": "decision"}
+{"text": "Le comité valide le planning proposé.", "label": "decision"}
+{"text": "Nous avons convenu de passer à deux réunions par mois.", "label": "decision"}
+{"text": "On décide de recruter un développeur backend.", "label": "decision"}
+{"text": "C'est réglé, on garde l'hébergement actuel.", "label": "decision"}
+{"text": "On met en pause le projet mobile jusqu'en mars.", "label": "decision"}
+{"text": "La direction a approuvé le nouveau budget.", "label": "decision"}
+{"text": "On choisit la date du 12 janvier pour la formation.", "label": "decision"}
+{"text": "Il est convenu que chaque équipe présente ses résultats vendredi.", "label": "decision"}
+{"text": "On passe à Python 3.12 pour tout le projet.", "label": "decision"}
+{"text": "L'assemblée adopte le règlement intérieur à l'unanimité.", "label": "decision"}
+{"text": "Bon, on part sur la maquette numéro deux.", "label": "decision"}
+{"text": "Alors on annule l'événement du mois prochain.", "label": "decision"}
+{"text": "On maintient la réunion de jeudi malgré les absences.", "label": "decision"}
+{"text": "Décision prise : les comptes rendus seront envoyés sous 24 heures.", "label": "decision"}
+{"text": "On abandonne l'idée du partenariat pour cette année.", "label": "decision"}
+{"text": "On fige le périmètre de la version 1.", "label": "decision"}
+{"text": "Le jury a validé le sujet du projet.", "label": "decision"}
+{"text": "On reporte la soutenance au 20 juin.", "label": "decision"}
+{"text": "Donc on garde Whisper pour la transcription.", "label": "decision"}
+{"text": "Tout le monde est d'accord pour utiliser Teams.", "label": "decision"}
+{"text": "On opte pour un abonnement annuel.", "label": "decision"}
+{"text": "Finalement on garde le même prestataire.", "label": "decision"}
+{"text": "We agreed to use PostgreSQL in production.", "label": "decision"}
+{"text": "It's decided, the launch is on Monday.", "label": "decision"}
+{"text": "Tfahmna nkhdmo b Streamlit f la première version.", "label": "decision"}
+{"text": "9rrna nbeddlo le fournisseur.", "label": "decision"}
+{"text": "Ttafa9na 3la la date dyal la démo.", "label": "decision"}
+{"text": "On en reparle à la prochaine réunion, ce n'est pas prioritaire.", "label": "decision"}
+{"text": "Peux-tu mettre à jour le tableau de bord d'ici jeudi ?", "label": "action"}
+{"text": "Je m'occupe de réserver la salle.", "label": "action"}
+{"text": "Hamza va installer le serveur de test lundi.", "label": "action"}
+{"text": "Je t'envoie les chiffres ce soir.", "label": "action"}
+{"text": "Vous pouvez valider le document avant midi ?", "label": "action"}
+{"text": "Il faut envoyer la facture au client avant la fin du mois.", "label": "action"}
+{"text": "Je contacte le service juridique demain.", "label": "action"}
+{"text": "Imane se charge de la communication sur LinkedIn.", "label": "action"}
+{"text": "Je vais rédiger le cahier des charges cette semaine.", "label": "action"}
+{"text": "Tu peux appeler le fournisseur pour le devis ?", "label": "action"}
+{"text": "Merci de déposer vos rapports sur le drive avant vendredi.", "label": "action"}
+{"text": "Je prépare la présentation pour le comité.", "label": "action"}
+{"text": "N'oublie pas de mettre à jour le planning.", "label": "action"}
+{"text": "Je relance l'équipe technique pour le bug de connexion.", "label": "action"}
+{"text": "Zineb doit finaliser les maquettes pour le 3 décembre.", "label": "action"}
+{"text": "Je corrige les fautes dans le rapport d'ici demain.", "label": "action"}
+{"text": "Pourriez-vous m'envoyer vos disponibilités ?", "label": "action"}
+{"text": "Je fais un point avec le client mardi.", "label": "action"}
+{"text": "Il faut qu'on teste l'export Word avant la démo.", "label": "action"}
+{"text": "Je me charge d'annoter les cent premières transcriptions.", "label": "action"}
+{"text": "Rachid, tu t'occupes des achats de matériel ?", "label": "action"}
+{"text": "Je vérifie les accès au serveur.", "label": "action"}
+{"text": "On doit envoyer le dossier avant le 15 janvier.", "label": "action"}
+{"text": "Je mets en place l'environnement Docker.", "label": "action"}
+{"text": "Tu prépares le compte rendu de la séance ?", "label": "action"}
+{"text": "Je vais tester BARThez sur le corpus AMI.", "label": "action"}
+{"text": "Salma va organiser la réunion avec l'encadrant.", "label": "action"}
+{"text": "Pense à sauvegarder la base de données.", "label": "action"}
+{"text": "Je finalise le chapitre trois du rapport ce week-end.", "label": "action"}
+{"text": "Ghadi nsifet lik le fichier daba.", "label": "action"}
+{"text": "Khassek tkemmel la maquette 9bel tnin.", "label": "action"}
+{"text": "Ana ghadi nhder m3a le client ghedda.", "label": "action"}
+{"text": "Khassna nsaliw les tests 9bel la démo.", "label": "action"}
+{"text": "I will update the documentation tomorrow.", "label": "action"}
+{"text": "Could you review my pull request?", "label": "action"}
+{"text": "Please send the invoice by Friday.", "label": "action"}
+{"text": "Je peux m'en charger.", "label": "action"}
+{"text": "Oui, je m'en occupe dès demain.", "label": "action"}
+{"text": "Je regarde ça et je te redis.", "label": "action"}
+{"text": "Je reprends le module d'export.", "label": "action"}
+{"text": "Le serveur a planté deux fois cette semaine.", "label": "information"}
+{"text": "On a reçu une réponse positive du client.", "label": "information"}
+{"text": "Le taux de conversion est passé à 4 %.", "label": "information"}
+{"text": "Je ne suis pas disponible jeudi.", "label": "information"}
+{"text": "Les tests de charge ont donné de bons résultats.", "label": "information"}
+{"text": "Il y a eu un retard de livraison du matériel.", "label": "information"}
+{"text": "On en a parlé avec l'encadrant la semaine dernière.", "label": "information"}
+{"text": "Le modèle met environ dix secondes par fichier.", "label": "information"}
+{"text": "Qu'est-ce que vous en pensez ?", "label": "information"}
+{"text": "Je trouve que l'interface est un peu chargée.", "label": "information"}
+{"text": "On pourrait peut-être utiliser une autre couleur.", "label": "information"}
+{"text": "Le rapport fait actuellement trente pages.", "label": "information"}
+{"text": "Est-ce que quelqu'un a des questions ?", "label": "information"}
+{"text": "La dernière version corrige le problème d'accents.", "label": "information"}
+{"text": "Je pense que c'est faisable dans les délais.", "label": "information"}
+{"text": "Le client n'a pas encore répondu.", "label": "information"}
+{"text": "Ça dépend du budget disponible.", "label": "information"}
+{"text": "On a eu 45 participants à l'atelier.", "label": "information"}
+{"text": "C'est intéressant comme approche.", "label": "information"}
+{"text": "Le fichier audio est de mauvaise qualité.", "label": "information"}
+{"text": "Il pleuvait, donc peu de monde est venu.", "label": "information"}
+{"text": "Le précédent prestataire était plus cher.", "label": "information"}
+{"text": "On n'a pas encore les résultats de l'évaluation.", "label": "information"}
+{"text": "Bienvenue à Imane qui rejoint l'équipe.", "label": "information"}
+{"text": "On manque de données annotées en darija.", "label": "information"}
+{"text": "Je ne sais pas si c'est la bonne solution.", "label": "information"}
+{"text": "Il faudrait peut-être y réfléchir davantage.", "label": "information"}
+{"text": "Oui, je suis d'accord avec toi.", "label": "information"}
+{"text": "Merci pour la présentation.", "label": "information"}
+{"text": "Le dernier sprint s'est bien passé.", "label": "information"}
+{"text": "La salle est réservée jusqu'à 18 heures.", "label": "information"}
+{"text": "Wach kolchi wajed ?", "label": "information"}
+{"text": "Lbarh tsift lina le contrat.", "label": "information"}
+{"text": "Hadchi mzyan bzaf.", "label": "information"}
+{"text": "Le client ma jawbch mazal.", "label": "information"}
+{"text": "The meeting is recorded.", "label": "information"}
+{"text": "We had some issues with the API last week.", "label": "information"}
+{"text": "I think it's a good idea.", "label": "information"}
+{"text": "Ok, merci.", "label": "information"}
+{"text": "On passe au point suivant.", "label": "information"}
+{"text": "Je propose qu'on vote à la prochaine réunion.", "label": "information"}
+{"text": "Est-ce qu'on change de fournisseur ?", "label": "information"}
+{"text": "Les retours des utilisateurs sont plutôt positifs.", "label": "information"}
+{"text": "Il reste trois semaines avant la soutenance.", "label": "information"}
+{"text": "La version actuelle ne supporte pas l'audio.", "label": "information"}

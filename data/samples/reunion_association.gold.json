@@ -1,0 +1,16 @@
+{
+  "transcript": "reunion_association.txt",
+  "meeting_date": "2026-11-17",
+  "reference_summary": "Le bureau de l'association a traité la collecte de fournitures scolaires, le local et les adhésions. Les demandes passent d'environ 140 à 200 élèves, l'association organisera donc deux points de collecte, au lycée et à la mairie. Face à une hausse de 15 % du loyer, le bail ne sera pas renouvelé et une salle sera demandée à la maison des jeunes. Douze nouvelles adhésions ont été reçues ; le registre et les cotisations seront mis à jour avant la prochaine réunion du 5 décembre.",
+  "decisions": [
+    "Deux points de collecte, au lycée et à la mairie",
+    "Ne pas renouveler le bail et faire la demande à la maison des jeunes"
+  ],
+  "actions": [
+    {"task": "Contacter le directeur du lycée", "owner": "Hajar", "deadline_date": "2026-11-18"},
+    {"task": "Demander l'autorisation à la mairie", "owner": "Youssef", "deadline_date": "2026-11-30"},
+    {"task": "Écrire au propriétaire pour l'informer", "owner": "Fatima Zahra", "deadline_date": "2026-11-30"},
+    {"task": "Déposer le dossier à la maison des jeunes", "owner": "Hajar", "deadline_date": null},
+    {"task": "Mettre à jour le registre des membres et encaisser les cotisations", "owner": "Youssef", "deadline_date": null}
+  ]
+}

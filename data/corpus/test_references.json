@@ -1,0 +1,62 @@
+{
+  "test_01": {
+    "reference_summary": "Le cabinet prépare la clôture des comptes de quarante clients avant le 31 décembre. Pour éviter le retard de l'an dernier, dû aux factures tardives, la date limite de dépôt des factures est fixée au 5 décembre et les clients en seront informés. Le logiciel de relance automatique est reporté à l'année prochaine faute de budget. Les heures supplémentaires sont autorisées jusqu'à la fin de la clôture.",
+    "decisions": [
+      "La date limite de dépôt des factures est fixée au 5 décembre",
+      "Le logiciel de relance est reporté à l'année prochaine",
+      "Les heures supplémentaires sont autorisées jusqu'à la fin de la clôture"
+    ],
+    "actions": [
+      {"task": "Informer tous les clients de la nouvelle date", "owner": "Leila", "deadline_date": "2026-11-18"},
+      {"task": "Préparer la répartition des dossiers par collaborateur", "owner": "M. Ouazzani", "deadline_date": "2026-11-20"}
+    ]
+  },
+  "test_02": {
+    "reference_summary": "Les enseignants planifient les soutenances de vingt-quatre binômes. Pour éviter des journées trop chargées, les soutenances se tiendront sur trois jours, du 14 au 16 décembre, dans trois salles équipées. Aucun retard ne sera accepté pour les rapports. Le planning sera publié sur la plateforme et les jurys seront composés par le professeur El Amrani.",
+    "decisions": [
+      "Les soutenances sont organisées sur trois jours, du 14 au 16 décembre",
+      "Aucun retard ne sera accepté pour les rapports"
+    ],
+    "actions": [
+      {"task": "Réserver les salles auprès de la scolarité", "owner": "Dr. Naciri", "deadline_date": "2026-11-19"},
+      {"task": "Publier le planning des soutenances sur la plateforme", "owner": "Pr. Saidi", "deadline_date": "2026-12-04"},
+      {"task": "Composer les jurys", "owner": "Pr. El Amrani", "deadline_date": null}
+    ]
+  },
+  "test_03": {
+    "reference_summary": "Les commandes ont augmenté de quarante pour cent depuis le Black Friday et le transporteur actuel ne suit plus. L'équipe signe avec MaroColis, plus cher mais plus rapide, pour décembre. L'entrepôt étant plein, un local supplémentaire sera loué pour deux mois. Deux préparateurs de commandes seront recrutés.",
+    "decisions": [
+      "On signe avec MaroColis pour décembre",
+      "On loue un local supplémentaire pour deux mois"
+    ],
+    "actions": [
+      {"task": "Envoyer le contrat signé à MaroColis", "owner": "Amal", "deadline_date": "2026-11-17"},
+      {"task": "Chercher un local près de l'entrepôt", "owner": "Younes", "deadline_date": "2026-11-20"},
+      {"task": "Publier l'offre pour deux préparateurs", "owner": "Younes", "deadline_date": "2026-11-21"}
+    ]
+  },
+  "test_04": {
+    "reference_summary": "L'équipe prépare la campagne de Ramadan avec un budget de 20 000 dirhams. Comme les influenceurs ont peu rapporté l'an dernier, la campagne utilisera uniquement des publicités Instagram et TikTok. Elle commencera quinze jours avant Ramadan. Sanaa prépare le planning des publicités et Ayoub les visuels.",
+    "decisions": [
+      "Nkhdmo ghir b les pubs had l3am, bla influenceurs",
+      "Nbdaw la campagne 15 jour 9bel Ramadan"
+    ],
+    "actions": [
+      {"task": "Twjjdi le planning dyal les pubs", "owner": "Sanaa", "deadline_date": "2026-11-20"},
+      {"task": "Nsawb les visuels w nsiftom", "owner": "Ayoub", "deadline_date": "2026-11-23"}
+    ]
+  },
+  "test_05": {
+    "reference_summary": "L'association organise une collecte de couvertures pour les familles du douar, avec un objectif de quatre cents couvertures et un besoin d'environ vingt mille dirhams. Une cagnotte en ligne sera lancée et la proposition du supermarché d'accueillir un point de collecte est acceptée. La distribution aura lieu le 26 décembre.",
+    "decisions": [
+      "L'objectif est fixé à quatre cents couvertures",
+      "On accepte la proposition du supermarché",
+      "La distribution aura lieu le 26 décembre"
+    ],
+    "actions": [
+      {"task": "Lancer la cagnotte en ligne", "owner": "Said", "deadline_date": "2026-11-18"},
+      {"task": "S'occuper de l'affiche pour le point de collecte", "owner": "Fatine", "deadline_date": null},
+      {"task": "Trouver un camion pour la distribution", "owner": "Fatine", "deadline_date": "2026-11-30"}
+    ]
+  }
+}

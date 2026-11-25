@@ -1,0 +1,17 @@
+{
+  "transcript": "reunion_projet.txt",
+  "meeting_date": "2026-11-11",
+  "reference_summary": "La réunion a porté sur le choix du modèle de résumé, la maquette de l'interface et le planning de la démo. Après comparaison, BARThez a été retenu pour le résumé car il obtient un meilleur score ROUGE-L que mT5 et respecte le temps de traitement, Mistral restant une option. La maquette Streamlit doit être complétée par le tableau des actions, l'export PDF et une page historique avec recherche par mot-clé. La démo devant l'encadrant est fixée au 9 décembre pour laisser le temps de finir l'évaluation sur le corpus AMI.",
+  "decisions": [
+    "On part sur BARThez pour le résumé et on garde Mistral en option",
+    "Ajouter une page historique avec une recherche par mot-clé",
+    "On valide le 9 décembre pour la démo"
+  ],
+  "actions": [
+    {"task": "Préparer un tableau comparatif des deux modèles", "owner": "Yousra", "deadline_date": "2026-11-13"},
+    {"task": "Ajouter le tableau des actions et l'export PDF", "owner": "Rania", "deadline_date": "2026-11-18"},
+    {"task": "Faire la page historique", "owner": "Salma", "deadline_date": "2026-11-20"},
+    {"task": "Envoyer l'invitation à l'encadrant", "owner": "Salma", "deadline_date": "2026-11-12"},
+    {"task": "Lancer l'évaluation ROUGE sur le corpus AMI", "owner": "Yousra", "deadline_date": "2026-11-30"}
+  ]
+}

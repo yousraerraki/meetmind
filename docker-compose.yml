@@ -1,0 +1,81 @@
+# MeetMind — lancement complet :
+#   docker compose up --build
+#     → interface React : http://localhost:8080
+#     → API (Swagger)   : http://localhost:8000/docs
+#
+# Options :
+#   docker compose --profile streamlit up --build   (+ interface Streamlit : http://localhost:8501)
+#   docker compose --profile llm up --build         (+ Ollama pour le résumé LLM Mistral, local)
+#   INSTALL_NLP=true docker compose up --build      (image API avec les vrais modèles)
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: meetmind
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-meetmind}
+      POSTGRES_DB: meetmind
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U meetmind"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      args:
+        INSTALL_NLP: ${INSTALL_NLP:-false}
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg2://meetmind:${POSTGRES_PASSWORD:-meetmind}@db:5432/meetmind
+      NLP_MODE: ${NLP_MODE:-auto}
+      LLM_BASE_URL: http://ollama:11434
+      WHISPER_PROMPT: ${WHISPER_PROMPT:-MeetMind, BARThez, CamemBERT, mT5, Whisper, encadrant, soutenance, ROUGE}
+    volumes:
+      - ./models:/app/models          # CamemBERT fine-tuné (models/camembert-meetmind)
+      - hf-cache:/root/.cache         # modèles Hugging Face / Whisper téléchargés
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  web:
+    build: ./frontend-react
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  streamlit:
+    profiles: ["streamlit"]
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+
+  ollama:
+    profiles: ["llm"]
+    image: ollama/ollama:latest
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+
+volumes:
+  pgdata:
+  hf-cache:
+  ollama:

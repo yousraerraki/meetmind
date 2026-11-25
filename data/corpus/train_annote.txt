@@ -1,0 +1,171 @@
+# Corpus synthétique MeetMind — partie ENTRAÎNEMENT (10 réunions)
+# Rédigé pour le projet (données synthétiques, pas des réunions réelles).
+# Format : ### identifiant | titre
+#          ÉTIQUETTE|Locuteur : phrase      (I = information, D = décision, A = action)
+# Date de toutes les réunions : lundi 16/11/2026
+
+### train_01 | Startup — préparation du lancement
+I|Sofia : Bonjour à tous, l'objectif de ce matin est de préparer le lancement de la version 2.
+I|Adam : Les tests de charge sont terminés, le serveur tient deux mille utilisateurs simultanés.
+I|Sofia : Très bien, et côté design, où en est-on ?
+I|Lina : Il reste deux écrans à finaliser, l'onboarding et la page de paiement.
+D|Sofia : Bon, on retient la date du 1er décembre pour le lancement.
+I|Adam : Ça me paraît jouable si le design est prêt à temps.
+A|Sofia : Lina, tu termines les deux écrans d'ici jeudi ?
+A|Lina : Oui, je m'en occupe.
+A|Adam : Je vais préparer le plan de retour arrière en cas de problème.
+I|Sofia : Pour la communication, on avait parlé d'une vidéo de démonstration.
+I|Lina : Une vidéo coûte cher, environ cinq mille dirhams avec un prestataire.
+D|Sofia : Finalement on fait la vidéo en interne, pas de prestataire.
+A|Sofia : Lina se charge du script de la vidéo pour lundi prochain.
+I|Adam : On pourrait aussi publier un article de blog le jour du lancement.
+I|Sofia : Bonne idée, on en parlera à la prochaine réunion.
+A|Sofia : Adam, pense à mettre à jour la documentation de l'API avant le lancement.
+I|Sofia : Merci à tous, bonne journée.
+
+### train_02 | Lycée — conseil pédagogique
+I|M. Berrada : Bonjour, nous allons parler des examens blancs et de la sortie scolaire.
+I|Mme Alami : Les examens blancs de mathématiques sont prévus pour la semaine du 7 décembre.
+I|M. Chraibi : En physique, nous n'avons pas encore fixé de date.
+D|M. Berrada : Il est décidé que tous les examens blancs auront lieu la même semaine.
+A|M. Berrada : Monsieur Chraibi, vous pouvez envoyer votre sujet avant le 30 novembre ?
+A|M. Chraibi : Entendu, je vous l'envoie avant la fin du mois.
+I|Mme Alami : Pour la sortie au musée, nous avons trente-deux élèves inscrits.
+I|M. Berrada : Le bus coûte mille deux cents dirhams pour la journée.
+D|M. Berrada : Nous validons la sortie au musée pour le vendredi 11 décembre.
+A|Mme Alami : Je me charge de collecter les autorisations parentales.
+A|M. Berrada : Il faut réserver le bus cette semaine.
+A|M. Chraibi : Je peux m'occuper de la réservation du bus.
+I|Mme Alami : Est-ce que les parents accompagnateurs sont déjà prévus ?
+I|M. Berrada : Pas encore, on verra selon les réponses.
+I|M. Berrada : Merci à tous pour votre présence.
+
+### train_03 | Hôpital — organisation du service
+I|Dr Haddad : Bonjour, on fait le point sur les gardes du mois de décembre.
+I|Inf. Rachidi : Nous manquons de deux infirmières pour les nuits du week-end.
+I|Dr Haddad : C'est un problème qui revient chaque année pendant les fêtes.
+D|Dr Haddad : Nous allons faire appel à l'agence d'intérim pour les nuits de décembre.
+A|Dr Haddad : Madame Rachidi, contactez l'agence avant mercredi s'il vous plaît.
+A|Inf. Rachidi : D'accord, je les appelle demain matin.
+I|Dr Tazi : Le nouveau moniteur cardiaque est arrivé mais personne n'est formé.
+A|Dr Tazi : Je vais organiser une formation pour l'équipe la semaine prochaine.
+I|Dr Haddad : Combien de temps dure la formation ?
+I|Dr Tazi : Environ deux heures par groupe.
+D|Dr Haddad : Ok, la formation sera obligatoire pour toute l'équipe de jour.
+A|Dr Haddad : Docteur Tazi, merci d'envoyer le planning des groupes à tout le monde.
+I|Inf. Rachidi : Les patients se plaignent aussi du temps d'attente aux urgences.
+I|Dr Haddad : On abordera ce point à la réunion de direction.
+I|Dr Haddad : Bon courage à tous.
+
+### train_04 | Association sportive — tournoi
+I|Karim : Salut tout le monde, on doit organiser le tournoi de football du mois prochain.
+I|Hiba : On a déjà douze équipes inscrites, il en manque quatre.
+I|Omar : Le terrain municipal est libre le 12 et le 19 décembre.
+D|Karim : On choisit le samedi 19 décembre pour le tournoi.
+I|Hiba : Il faut encore trouver un sponsor pour les maillots.
+A|Karim : Hiba, tu peux contacter la boulangerie du quartier pour le sponsoring ?
+A|Hiba : Pas de problème, je passe les voir demain.
+A|Omar : Je m'occupe de la réservation du terrain auprès de la mairie.
+I|Karim : L'année dernière, on avait eu des problèmes d'arbitrage.
+D|Karim : Cette année, on prend des arbitres officiels de la ligue.
+I|Omar : Ça coûte trois cents dirhams par match.
+A|Karim : Omar, tu me fais un budget complet pour vendredi.
+I|Hiba : Et les inscriptions des quatre équipes manquantes ?
+A|Karim : Je publie une annonce sur la page Facebook ce soir.
+I|Karim : Merci les amis, à la semaine prochaine.
+
+### train_05 | Agence web — point client
+I|Nora : On a reçu les retours du client sur la maquette du site e-commerce.
+I|Yassir : Ils trouvent la page d'accueil trop chargée.
+I|Nora : Ils veulent aussi un mode sombre, mais ce n'était pas prévu dans le devis.
+D|Nora : Le mode sombre sera facturé en supplément, c'est acté.
+A|Nora : Yassir, tu simplifies la page d'accueil pour jeudi.
+A|Yassir : Ok, je fais une nouvelle version d'ici jeudi.
+I|Meriem : Le client demande aussi quand le site sera en ligne.
+I|Nora : Avec les corrections, on peut viser la mi-décembre.
+D|Nora : On annonce au client une mise en ligne le 15 décembre.
+A|Meriem : Je rédige le devis pour le mode sombre aujourd'hui.
+A|Nora : Merci d'envoyer le devis au client avant demain midi.
+I|Yassir : Est-ce qu'on garde la même police d'écriture ?
+I|Nora : Je pense que oui, mais demande-leur leur avis.
+A|Nora : Je vais appeler le client pour confirmer le planning.
+I|Nora : Parfait, merci à vous.
+
+### train_06 | Chantier BTP — réunion de chantier
+I|Ing. Fassi : Bonjour, point sur l'avancement du bâtiment B.
+I|Chef Amrani : Le gros œuvre est terminé au troisième étage.
+I|Chef Amrani : On a eu deux jours de retard à cause de la pluie.
+I|Ing. Fassi : La livraison du béton pour le quatrième étage est prévue mercredi.
+D|Ing. Fassi : On maintient la date de fin du gros œuvre au 18 décembre.
+A|Ing. Fassi : Monsieur Amrani, renforcez l'équipe avec trois ouvriers cette semaine.
+A|Chef Amrani : Je contacte l'entreprise sous-traitante aujourd'hui.
+I|Mme Kabbaj : L'inspection de sécurité a relevé l'absence de garde-corps au troisième.
+D|Ing. Fassi : Personne ne monte au troisième sans garde-corps, c'est non négociable.
+A|Chef Amrani : Je fais installer les garde-corps demain.
+A|Mme Kabbaj : Je vais refaire une inspection jeudi après-midi.
+I|Ing. Fassi : Le client viendra visiter le chantier en fin de mois.
+A|Ing. Fassi : Il faut nettoyer le site avant la visite du client.
+I|Ing. Fassi : Merci, on se revoit lundi.
+
+### train_07 | Stage informatique — sprint planning
+I|Mehdi : Bienvenue au sprint planning, on commence le sprint 8 aujourd'hui.
+I|Salma : Le sprint 7 s'est bien passé, on a livré neuf tickets sur dix.
+I|Mehdi : Le ticket manquant concerne la connexion avec Google.
+D|Mehdi : On reprend le ticket de connexion Google en priorité dans ce sprint.
+A|Mehdi : Salma, tu prends le ticket de connexion Google.
+A|Salma : D'accord, je le termine pour mercredi.
+I|Imad : J'ai remarqué que les tests automatiques prennent vingt minutes.
+I|Mehdi : C'est beaucoup trop long pour chaque commit.
+D|Mehdi : On passe les tests lents en exécution nocturne.
+A|Imad : Je configure l'exécution nocturne dans la CI cette semaine.
+I|Salma : Est-ce qu'on fait la démo au client à la fin du sprint ?
+D|Mehdi : Oui, la démo est fixée au vendredi 27 novembre.
+A|Mehdi : Je prépare les slides de la démo.
+I|Mehdi : C'est bon pour moi, bon sprint à tous.
+
+### train_08 | Commune — conseil de quartier
+I|Président : Bonsoir, nous allons traiter l'éclairage public et le marché hebdomadaire.
+I|Mme Idrissi : Trois lampadaires de la rue principale sont en panne depuis un mois.
+I|M. Lahlou : Les habitants ont peur de rentrer tard le soir.
+D|Président : Le conseil adopte à l'unanimité la demande de réparation urgente.
+A|Président : Madame Idrissi, rédigez le courrier à la commune pour mardi.
+A|Mme Idrissi : Je le rédige ce soir et je vous l'envoie.
+I|M. Lahlou : Pour le marché, les commerçants demandent plus de places.
+I|Président : Le parking de l'école pourrait servir le dimanche.
+D|Président : Nous retenons le parking de l'école pour agrandir le marché.
+A|M. Lahlou : Je rencontre le directeur de l'école jeudi pour avoir son accord.
+I|Mme Idrissi : Il faudra aussi prévoir des poubelles supplémentaires.
+A|Président : Monsieur Lahlou, ajoutez ce point à votre rendez-vous avec le directeur.
+I|Président : Merci à tous, la séance est levée.
+
+### train_09 | Réunion en darija — restaurant
+I|Rachid : Salam, lyouma ghadi nhedro 3la la carte jdida w 3la les horaires.
+I|Zineb : Les clients kaybghiw plats healthy ktar, b7al les salades.
+I|Rachid : W chno 9alou 3la le tajine dyal l-7ut ?
+I|Zineb : Bzaf dyal les clients 3jbhom, walakin ghali chwiya.
+D|Rachid : Safi, ttafa9na nzidou 3 salades f la carte.
+D|Rachid : 9rrna n9ssou le prix dyal le tajine l 70 dh.
+A|Rachid : Zineb, khassek tsifti la carte jdida l l-imprimerie 9bel jem3a.
+A|Zineb : Wakha, ghadi nsiftha ghedda.
+I|Hamid : Les weekends kayn bzaf dyal l-khdma, w 7na ghir joj f la cuisine.
+A|Rachid : Ana ghadi nqelleb 3la cuisinier zayed had simana.
+I|Hamid : W ila ma lqinach ?
+I|Rachid : Nchoufou mn b3d.
+A|Rachid : Hamid, dir lia lista dyal les produits li khasshom 9bel l-khmis.
+I|Rachid : Merci l-kolchi.
+
+### train_10 | Meeting in English — product team
+I|Laura : Good morning everyone, let's review the mobile app roadmap.
+I|Ben : The beta testers reported crashes on older Android phones.
+I|Laura : How many users are affected?
+I|Ben : Around eight percent of our active users.
+D|Laura : We decided to drop support for Android versions older than ten.
+A|Laura : Ben, can you update the minimum version in the store listing by Friday?
+A|Ben : Sure, I'll do it tomorrow.
+I|Chloe : Marketing wants the new onboarding before the holiday campaign.
+D|Laura : We agreed to ship the new onboarding on December 10.
+A|Chloe : I will prepare the release notes next week.
+A|Laura : Please send the campaign brief to the design team today.
+I|Ben : Should we also translate the app into Arabic?
+I|Laura : Maybe next quarter, let's discuss it later.
+I|Laura : Thanks everyone.

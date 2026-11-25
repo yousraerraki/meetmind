@@ -1,0 +1,15 @@
+Nora : On a reçu les retours du client sur la maquette du site e-commerce.
+Yassir : Ils trouvent la page d'accueil trop chargée.
+Nora : Ils veulent aussi un mode sombre, mais ce n'était pas prévu dans le devis.
+Nora : Le mode sombre sera facturé en supplément, c'est acté.
+Nora : Yassir, tu simplifies la page d'accueil pour jeudi.
+Yassir : Ok, je fais une nouvelle version d'ici jeudi.
+Meriem : Le client demande aussi quand le site sera en ligne.
+Nora : Avec les corrections, on peut viser la mi-décembre.
+Nora : On annonce au client une mise en ligne le 15 décembre.
+Meriem : Je rédige le devis pour le mode sombre aujourd'hui.
+Nora : Merci d'envoyer le devis au client avant demain midi.
+Yassir : Est-ce qu'on garde la même police d'écriture ?
+Nora : Je pense que oui, mais demande-leur leur avis.
+Nora : Je vais appeler le client pour confirmer le planning.
+Nora : Parfait, merci à vous.

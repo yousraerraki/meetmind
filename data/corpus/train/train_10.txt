@@ -1,0 +1,14 @@
+Laura : Good morning everyone, let's review the mobile app roadmap.
+Ben : The beta testers reported crashes on older Android phones.
+Laura : How many users are affected?
+Ben : Around eight percent of our active users.
+Laura : We decided to drop support for Android versions older than ten.
+Laura : Ben, can you update the minimum version in the store listing by Friday?
+Ben : Sure, I'll do it tomorrow.
+Chloe : Marketing wants the new onboarding before the holiday campaign.
+Laura : We agreed to ship the new onboarding on December 10.
+Chloe : I will prepare the release notes next week.
+Laura : Please send the campaign brief to the design team today.
+Ben : Should we also translate the app into Arabic?
+Laura : Maybe next quarter, let's discuss it later.
+Laura : Thanks everyone.

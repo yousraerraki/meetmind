@@ -1,0 +1,151 @@
+{
+  "global": {
+    "n_reunions": 4,
+    "rougeL_moyen": 0.349,
+    "f1_decisions_moyen": 0.834,
+    "f1_actions_moyen": 1.0,
+    "temps_moyen_s": 0.275,
+    "objectif_rougeL_0.35": "❌",
+    "objectif_f1_actions_0.75": "✅"
+  },
+  "reunions": [
+    {
+      "fichier": "reunion_association.gold.json",
+      "temps_s": 1.08,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.491,
+        "rouge2": 0.315,
+        "rougeL": 0.431
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 0.5,
+        "f1": 0.667
+      },
+      "actions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [],
+        "actions_en_trop": [],
+        "decisions_non_trouvees": [
+          "Ne pas renouveler le bail et faire la demande à la maison des jeunes"
+        ],
+        "decisions_en_trop": []
+      }
+    },
+    {
+      "fichier": "reunion_darija.gold.json",
+      "temps_s": 0.0,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.36,
+        "rouge2": 0.184,
+        "rougeL": 0.337
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0
+      },
+      "actions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [],
+        "actions_en_trop": [],
+        "decisions_non_trouvees": [],
+        "decisions_en_trop": []
+      }
+    },
+    {
+      "fichier": "reunion_marketing.gold.json",
+      "temps_s": 0.01,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.464,
+        "rouge2": 0.181,
+        "rougeL": 0.274
+      },
+      "decisions": {
+        "precision": 0.667,
+        "rappel": 0.667,
+        "f1": 0.667
+      },
+      "actions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [],
+        "actions_en_trop": [],
+        "decisions_non_trouvees": [
+          "Le partenariat avec des influenceurs est reporté à janvier"
+        ],
+        "decisions_en_trop": [
+          "C'est une bonne idée mais on n'a pas le budget ce trimestre, on en reparle en janvier."
+        ]
+      }
+    },
+    {
+      "fichier": "reunion_projet.gold.json",
+      "temps_s": 0.01,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.503,
+        "rouge2": 0.249,
+        "rougeL": 0.353
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0
+      },
+      "actions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [],
+        "actions_en_trop": [],
+        "decisions_non_trouvees": [],
+        "decisions_en_trop": []
+      }
+    }
+  ]
+}

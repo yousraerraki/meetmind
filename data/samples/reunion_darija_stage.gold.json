@@ -1,0 +1,17 @@
+{
+  "transcript": "reunion_darija_stage.txt",
+  "meeting_date": "2026-11-18",
+  "reference_summary": "L'équipe a parlé du site web de la boutique, de la campagne Instagram et du recrutement. La page d'accueil est prête, la page paiement doit être finie avant vendredi. Ils ont décidé d'utiliser CMI au lieu de PayPal car beaucoup de clients marocains n'ont pas PayPal. Pour Instagram, 1800 dh sur 3000 ont été dépensés et ils ont décidé de faire plus de vidéos et moins de photos. Ils cherchent un développeur React et une annonce sera publiée sur LinkedIn.",
+  "decisions": [
+    "Nkhdmo b CMI l-paiement",
+    "Nzidou f les vidéos w n9ssou mn les photos"
+  ],
+  "actions": [
+    {"task": "Nsali la page paiement", "owner": "Imane", "deadline_date": "2026-11-20"},
+    {"task": "Tsifet l-Imane la documentation dyal CMI", "owner": "Yassine", "deadline_date": "2026-11-19"},
+    {"task": "Nsowwer 3 d les vidéos", "owner": "Salma", "deadline_date": "2026-11-20"},
+    {"task": "Tsifti le planning dyal les posts", "owner": "Salma", "deadline_date": "2026-11-23"},
+    {"task": "Sifet le CV dyalo", "owner": "Yassine", "deadline_date": "2026-11-30"},
+    {"task": "N7der l'annonce w nposti-ha f LinkedIn", "owner": "Hamza", "deadline_date": "2026-11-19"}
+  ]
+}

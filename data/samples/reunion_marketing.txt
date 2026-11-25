@@ -1,0 +1,25 @@
+Nadia Alaoui : Bon, on commence ? Euh, l'objectif aujourd'hui c'est de caler la campagne de lancement de l'application mobile et de faire le point sur le budget.
+Omar Tazi : Oui. Alors côté budget, on a dépensé 18 000 dirhams sur les 30 000 prévus pour le trimestre.
+Omar Tazi : La publicité Instagram a coûté plus cher que prévu, à peu près 7 000 dirhams au lieu de 5 000.
+Nadia Alaoui : Et ça a ramené combien d'inscriptions ?
+Omar Tazi : Environ 1 200 inscriptions, donc un coût par inscription autour de 6 dirhams.
+Leila Benjelloun : C'est correct, mais TikTok marche mieux chez les 18-25 ans d'après nos tests.
+Nadia Alaoui : Ok. Donc on réduit Instagram et on met le reste du budget publicitaire sur TikTok pour le lancement.
+Omar Tazi : Ça me va.
+Nadia Alaoui : Leila, tu prépares trois vidéos courtes pour TikTok d'ici le 25 novembre ?
+Leila Benjelloun : Oui je m'en occupe, je te les montre avant de les publier.
+Nadia Alaoui : Parfait. Deuxième point, la date de lancement.
+Mehdi Kettani : Côté technique, la version 1.0 sera prête le 1er décembre si les tests de paiement passent.
+Mehdi Kettani : On a encore un bug sur le paiement par carte avec certaines banques.
+Nadia Alaoui : C'est bloquant ?
+Mehdi Kettani : Oui, on ne peut pas lancer sans paiement fiable.
+Nadia Alaoui : Alors on fixe le lancement au 8 décembre, ça laisse une semaine de marge.
+Leila Benjelloun : D'accord pour le 8.
+Nadia Alaoui : Mehdi, il faut corriger le bug de paiement avant le 1er décembre.
+Mehdi Kettani : Ok, je vais aussi faire tester l'application par cinq utilisateurs la semaine prochaine.
+Omar Tazi : Et pour la presse ? On envoie un communiqué ?
+Nadia Alaoui : Oui, Omar va rédiger le communiqué de presse pour le 4 décembre.
+Omar Tazi : Entendu.
+Leila Benjelloun : Moi je pense qu'on pourrait aussi faire un partenariat avec des influenceurs marocains.
+Nadia Alaoui : C'est une bonne idée mais on n'a pas le budget ce trimestre, on en reparle en janvier.
+Nadia Alaoui : Merci à tous, je vous envoie le compte rendu.

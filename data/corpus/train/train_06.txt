@@ -1,0 +1,14 @@
+Ing. Fassi : Bonjour, point sur l'avancement du bâtiment B.
+Chef Amrani : Le gros œuvre est terminé au troisième étage.
+Chef Amrani : On a eu deux jours de retard à cause de la pluie.
+Ing. Fassi : La livraison du béton pour le quatrième étage est prévue mercredi.
+Ing. Fassi : On maintient la date de fin du gros œuvre au 18 décembre.
+Ing. Fassi : Monsieur Amrani, renforcez l'équipe avec trois ouvriers cette semaine.
+Chef Amrani : Je contacte l'entreprise sous-traitante aujourd'hui.
+Mme Kabbaj : L'inspection de sécurité a relevé l'absence de garde-corps au troisième.
+Ing. Fassi : Personne ne monte au troisième sans garde-corps, c'est non négociable.
+Chef Amrani : Je fais installer les garde-corps demain.
+Mme Kabbaj : Je vais refaire une inspection jeudi après-midi.
+Ing. Fassi : Le client viendra visiter le chantier en fin de mois.
+Ing. Fassi : Il faut nettoyer le site avant la visite du client.
+Ing. Fassi : Merci, on se revoit lundi.

@@ -1,0 +1,71 @@
+source,speaker,text,label
+test_01,Mme Bennis,"Bonjour, nous devons organiser la clôture des comptes de fin d'année.",information
+test_01,M. Ouazzani,Nous avons quarante clients à clôturer avant le 31 décembre.,information
+test_01,Mme Bennis,"L'année dernière, nous avions terminé avec une semaine de retard.",information
+test_01,Leila,"Le principal problème, c'était les factures reçues trop tard.",information
+test_01,Mme Bennis,"À partir de cette année, la date limite de dépôt des factures est fixée au 5 décembre.",decision
+test_01,Mme Bennis,"Leila, informez tous les clients de cette nouvelle date d'ici mercredi.",action
+test_01,Leila,"Très bien, j'envoie un e-mail groupé dès demain.",action
+test_01,M. Ouazzani,Il faudrait peut-être aussi un logiciel de relance automatique.,information
+test_01,Mme Bennis,"C'est intéressant, mais le budget est déjà engagé pour cette année.",information
+test_01,Mme Bennis,Le logiciel de relance est reporté à l'année prochaine.,decision
+test_01,Mme Bennis,"Monsieur Ouazzani, préparez la répartition des dossiers par collaborateur pour vendredi.",action
+test_01,M. Ouazzani,Je m'en charge.,action
+test_01,Leila,Est-ce qu'on prévoit des heures supplémentaires en décembre ?,information
+test_01,Mme Bennis,"Oui, les heures supplémentaires sont autorisées jusqu'à la fin de la clôture.",decision
+test_01,Mme Bennis,Merci à tous.,information
+test_02,Pr. El Amrani,"Bonjour, il faut planifier les soutenances des projets de fin d'année.",information
+test_02,Pr. Saidi,Nous avons vingt-quatre binômes cette année.,information
+test_02,Pr. El Amrani,Chaque soutenance dure trente minutes avec les questions.,information
+test_02,Pr. Saidi,"Sur deux jours, ça fait douze soutenances par jour, c'est beaucoup.",information
+test_02,Pr. El Amrani,"Nous organisons les soutenances sur trois jours, du 14 au 16 décembre.",decision
+test_02,Dr. Naciri,Il faudra au moins trois salles équipées de vidéoprojecteurs.,information
+test_02,Pr. El Amrani,"Docteur Naciri, pourriez-vous réserver les salles auprès de la scolarité ?",action
+test_02,Dr. Naciri,"Oui, je passe à la scolarité jeudi.",action
+test_02,Pr. Saidi,Les étudiants demandent aussi s'ils peuvent rendre le rapport en retard.,information
+test_02,Pr. El Amrani,"Non, aucun retard ne sera accepté pour les rapports.",decision
+test_02,Pr. Saidi,Je publie le planning des soutenances sur la plateforme avant le 4 décembre.,action
+test_02,Dr. Naciri,"Et pour les jurys, qui fait la répartition ?",information
+test_02,Pr. El Amrani,Je m'occupe de la composition des jurys.,action
+test_02,Pr. El Amrani,Merci pour cette réunion efficace.,information
+test_03,Nabil,"Salut l'équipe, on parle des livraisons pour la période des fêtes.",information
+test_03,Amal,Les commandes ont augmenté de quarante pour cent depuis le Black Friday.,information
+test_03,Nabil,Notre transporteur actuel n'arrive plus à suivre.,information
+test_03,Amal,"J'ai reçu deux offres, une de Fast Delivery et une de MaroColis.",information
+test_03,Nabil,MaroColis est un peu plus cher mais livre en vingt-quatre heures.,information
+test_03,Nabil,"Ok, on signe avec MaroColis pour décembre.",decision
+test_03,Nabil,"Amal, envoie-leur le contrat signé demain.",action
+test_03,Amal,"Ça marche, je le fais demain matin.",action
+test_03,Younes,"L'entrepôt est presque plein, on stocke des cartons dans le couloir.",information
+test_03,Nabil,On loue un local supplémentaire pour deux mois.,decision
+test_03,Younes,Je cherche un local près de l'entrepôt d'ici vendredi.,action
+test_03,Amal,Il faudra aussi des préparateurs de commandes en plus.,information
+test_03,Nabil,"Younes, publie l'offre pour deux préparateurs ce week-end.",action
+test_03,Nabil,"Parfait, on fait le point lundi prochain.",information
+test_04,Ilyas,"Salam l'équipe, khassna nwjjdou la campagne dyal Ramadan.",information
+test_04,Sanaa,3ndna budget dyal 20 000 dh l had la campagne.,information
+test_04,Ilyas,"L3am li fat khdmna b les influenceurs, w ma jabouch bzaf d les ventes.",information
+test_04,Sanaa,Les pubs f Instagram w TikTok kanu a7ssan.,information
+test_04,Ilyas,"Safi, 9rrna nkhdmo ghir b les pubs had l3am, bla influenceurs.",decision
+test_04,Ilyas,"Sanaa, khassek twjjdi le planning dyal les pubs 9bel jem3a.",action
+test_04,Sanaa,"Wakha, ghadi nwjjdou had simana.",action
+test_04,Ayoub,"W les visuels, chkoun ghadi ydirhom ?",information
+test_04,Ayoub,Ana ghadi nsawb les visuels w nsiftom lik tnin.,action
+test_04,Ilyas,Ttafa9na tani nbdaw la campagne 15 jour 9bel Ramadan.,decision
+test_04,Sanaa,Wach n9dro nzidou chi promo f le site ?,information
+test_04,Ilyas,Nchoufou had l-mas2ala f la réunion jaya.,information
+test_04,Ilyas,"Yallah, bon courage.",information
+test_05,Hanane,"Bonsoir à tous, l'hiver arrive et les familles du douar ont besoin de couvertures.",information
+test_05,Said,"L'année dernière, on avait distribué trois cents couvertures.",information
+test_05,Hanane,"Cette année, on a recensé cent vingt familles.",information
+test_05,Hanane,Notre objectif est fixé à quatre cents couvertures.,decision
+test_05,Said,Il nous faut environ vingt mille dirhams.,information
+test_05,Hanane,"Said, lance la cagnotte en ligne dès cette semaine.",action
+test_05,Said,"D'accord, je la mets en ligne mercredi.",action
+test_05,Fatine,Le supermarché du centre accepte d'accueillir un point de collecte.,information
+test_05,Hanane,On accepte la proposition du supermarché.,decision
+test_05,Fatine,Je m'occupe de l'affiche pour le point de collecte.,action
+test_05,Hanane,"Fatine, il faudrait aussi trouver un camion pour la distribution avant la fin du mois.",action
+test_05,Said,La distribution pourrait se faire le dernier week-end de décembre.,information
+test_05,Hanane,"C'est validé, la distribution aura lieu le 26 décembre.",decision
+test_05,Hanane,Merci à tous pour votre engagement.,information

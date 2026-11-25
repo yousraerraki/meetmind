@@ -1,0 +1,28 @@
+{
+  "transcript": "test_05.txt",
+  "meeting_date": "2026-11-16",
+  "title": "Association humanitaire — collecte de couvertures",
+  "reference_summary": "L'association organise une collecte de couvertures pour les familles du douar, avec un objectif de quatre cents couvertures et un besoin d'environ vingt mille dirhams. Une cagnotte en ligne sera lancée et la proposition du supermarché d'accueillir un point de collecte est acceptée. La distribution aura lieu le 26 décembre.",
+  "decisions": [
+    "L'objectif est fixé à quatre cents couvertures",
+    "On accepte la proposition du supermarché",
+    "La distribution aura lieu le 26 décembre"
+  ],
+  "actions": [
+    {
+      "task": "Lancer la cagnotte en ligne",
+      "owner": "Said",
+      "deadline_date": "2026-11-18"
+    },
+    {
+      "task": "S'occuper de l'affiche pour le point de collecte",
+      "owner": "Fatine",
+      "deadline_date": null
+    },
+    {
+      "task": "Trouver un camion pour la distribution",
+      "owner": "Fatine",
+      "deadline_date": "2026-11-30"
+    }
+  ]
+}

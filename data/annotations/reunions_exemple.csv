@@ -1,0 +1,106 @@
+source,speaker,text,label,confiance_regles,verifie
+reunion_association.txt,Fatima Zahra,Bonsoir à toutes et à tous.,information,0.60,oui
+reunion_association.txt,Fatima Zahra,"On a trois sujets ce soir: la collecte de fournitures scolaires, le local et les nouvelles adhésions.",information,0.60,oui
+reunion_association.txt,Fatima Zahra,"Concernant la collecte, l'année dernière on avait aidé 140 élèves à Sidi Moumen.",information,0.60,oui
+reunion_association.txt,Youssef,"Cette année les demandes sont plus nombreuses, les écoles nous ont signalé environ 200 élèves.",information,0.60,oui
+reunion_association.txt,Hajar,"Il faudrait alors deux points de collecte au lieu d'un, peut-être au lycée et à la mairie.",information,0.60,oui
+reunion_association.txt,Fatima Zahra,Je propose qu'on garde les deux points de collecte.,information,0.60,oui
+reunion_association.txt,Fatima Zahra,Vous êtes d'accord?,information,0.60,oui
+reunion_association.txt,Hajar,"Oui, d'accord.",information,0.60,oui
+reunion_association.txt,Fatima Zahra,"Très bien, la décision est prise: deux points de collecte, au lycée et à la mairie.",decision,0.85,oui
+reunion_association.txt,Fatima Zahra,"Hajar, tu peux contacter le directeur du lycée cette semaine?",action,0.70,oui
+reunion_association.txt,Hajar,"Oui, je l'appelle demain matin.",action,0.85,oui
+reunion_association.txt,Youssef,Je me charge de demander l'autorisation à la mairie avant le 30 novembre.,action,0.85,oui
+reunion_association.txt,Fatima Zahra,"Deuxième sujet, le local.",information,0.60,oui
+reunion_association.txt,Fatima Zahra,Le propriétaire veut augmenter le loyer de 15 %.,information,0.60,oui
+reunion_association.txt,Youssef,"C'est trop pour nous, notre budget est déjà serré.",information,0.60,oui
+reunion_association.txt,Hajar,"On pourrait demander une salle à la maison des jeunes, c'est gratuit pour les associations.",information,0.60,oui
+reunion_association.txt,Fatima Zahra,On ne renouvelle pas le bail et on fait la demande à la maison des jeunes.,decision,0.60,oui
+reunion_association.txt,Fatima Zahra,Je vais écrire au propriétaire pour l'informer d'ici la fin du mois.,action,0.85,oui
+reunion_association.txt,Youssef,Et qui dépose le dossier à la maison des jeunes?,information,0.60,oui
+reunion_association.txt,Hajar,"Je peux le faire, j'ai les documents de l'association.",action,0.70,oui
+reunion_association.txt,Fatima Zahra,Merci Hajar.,information,0.60,oui
+reunion_association.txt,Fatima Zahra,"Dernier point, les adhésions: on a reçu 12 nouvelles demandes.",information,0.60,oui
+reunion_association.txt,Youssef,Il faut mettre à jour le registre des membres et encaisser les cotisations.,action,0.70,oui
+reunion_association.txt,Fatima Zahra,"Youssef, tu t'occupes du registre et des cotisations pour la prochaine réunion.",action,0.70,oui
+reunion_association.txt,Youssef,Pas de problème.,information,0.60,oui
+reunion_association.txt,Fatima Zahra,La prochaine réunion aura lieu le 5 décembre.,information,0.60,oui
+reunion_association.txt,Fatima Zahra,Merci et bonne soirée.,information,0.60,oui
+reunion_darija.txt,Amine,"Salam l'équipe, lyouma ghadi nhedro 3la la livraison dyal l'application w 3la le client.",information,0.70,oui
+reunion_darija.txt,Sara,Salam.,information,0.60,oui
+reunion_darija.txt,Sara,"Le client sift lina mail lbarh, bgha ybeddel la couleur dyal l'interface w yzid une page contact.",information,0.60,oui
+reunion_darija.txt,Amine,Wach hadchi kayn f le contrat?,information,0.60,oui
+reunion_darija.txt,Sara,La page contact machi f le contrat.,information,0.60,oui
+reunion_darija.txt,Amine,"Ok, ttafa9na: la couleur nbeddlouha, walakin la page contact ghadi nfactouriwha à part.",decision,0.70,oui
+reunion_darija.txt,Karim,D'accord m3ak.,information,0.60,oui
+reunion_darija.txt,Amine,"Sara, khassek tsifti devis l le client 9bel jem3a.",action,0.70,oui
+reunion_darija.txt,Sara,"Ok, ghadi nsiftou ghedda.",action,0.70,oui
+reunion_darija.txt,Karim,Ana ghadi nbeddel les couleurs d'ici lundi.,action,0.85,oui
+reunion_darija.txt,Amine,Mzyan.,information,0.60,oui
+reunion_darija.txt,Amine,"La livraison, wach n9dro nsallmouha f 30 novembre?",information,0.60,oui
+reunion_darija.txt,Karim,"Ila ma kanch chi bug kbir, iyeh.",information,0.60,oui
+reunion_darija.txt,Amine,9rrna: la livraison f 30 novembre.,decision,0.70,oui
+reunion_darija.txt,Amine,Ana ghadi n3ayet l le client bach nconfirmi la date.,action,0.70,oui
+reunion_darija.txt,Sara,"Safi, merci.",information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"Bon, on commence?",information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,L'objectif aujourd'hui c'est de caler la campagne de lancement de l'application mobile et de faire le point sur le budget.,information,0.60,oui
+reunion_marketing.txt,Omar Tazi,"Alors côté budget, on a dépensé 18 000 dirhams sur les 30 000 prévus pour le trimestre.",information,0.60,oui
+reunion_marketing.txt,Omar Tazi,"La publicité Instagram a coûté plus cher que prévu, à peu près 7 000 dirhams au lieu de 5 000.",information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,Et ça a ramené combien d'inscriptions?,information,0.60,oui
+reunion_marketing.txt,Omar Tazi,"Environ 1 200 inscriptions, donc un coût par inscription autour de 6 dirhams.",information,0.60,oui
+reunion_marketing.txt,Leila Benjelloun,"C'est correct, mais TikTok marche mieux chez les 18-25 ans d'après nos tests.",information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,Donc on réduit Instagram et on met le reste du budget publicitaire sur TikTok pour le lancement.,decision,0.70,oui
+reunion_marketing.txt,Omar Tazi,Ça me va.,information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"Leila, tu prépares trois vidéos courtes pour TikTok d'ici le 25 novembre?",action,0.85,oui
+reunion_marketing.txt,Leila Benjelloun,"Oui je m'en occupe, je te les montre avant de les publier.",action,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,Parfait.,information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"Deuxième point, la date de lancement.",information,0.60,oui
+reunion_marketing.txt,Mehdi Kettani,"Côté technique, la version 1.0 sera prête le 1er décembre si les tests de paiement passent.",information,0.60,oui
+reunion_marketing.txt,Mehdi Kettani,On a encore un bug sur le paiement par carte avec certaines banques.,information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,C'est bloquant?,information,0.60,oui
+reunion_marketing.txt,Mehdi Kettani,"Oui, on ne peut pas lancer sans paiement fiable.",information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"Alors on fixe le lancement au 8 décembre, ça laisse une semaine de marge.",decision,0.85,oui
+reunion_marketing.txt,Leila Benjelloun,D'accord pour le 8.,information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"Mehdi, il faut corriger le bug de paiement avant le 1er décembre.",action,0.85,oui
+reunion_marketing.txt,Mehdi Kettani,"Ok, je vais aussi faire tester l'application par cinq utilisateurs la semaine prochaine.",action,0.85,oui
+reunion_marketing.txt,Omar Tazi,Et pour la presse?,information,0.60,oui
+reunion_marketing.txt,Omar Tazi,On envoie un communiqué?,information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"Oui, Omar va rédiger le communiqué de presse pour le 4 décembre.",action,0.85,oui
+reunion_marketing.txt,Omar Tazi,Entendu.,information,0.60,oui
+reunion_marketing.txt,Leila Benjelloun,Moi je pense qu'on pourrait aussi faire un partenariat avec des influenceurs marocains.,information,0.60,oui
+reunion_marketing.txt,Nadia Alaoui,"C'est une bonne idée mais on n'a pas le budget ce trimestre, on en reparle en janvier.",decision,0.70,oui
+reunion_marketing.txt,Nadia Alaoui,"Merci à tous, je vous envoie le compte rendu.",action,0.70,oui
+reunion_projet.txt,Karim,"Bonjour à tous, merci d'être là.",information,0.60,oui
+reunion_projet.txt,Karim,"Alors aujourd'hui on a trois points: le choix du modèle de résumé, la maquette de l'interface et le planning de la démo.",information,0.60,oui
+reunion_projet.txt,Yousra,Bonjour.,information,0.60,oui
+reunion_projet.txt,Yousra,"Oui, pour le modèle de résumé j'ai testé BARThez et mT5 sur une dizaine de transcriptions.",information,0.60,oui
+reunion_projet.txt,Yousra,"BARThez donne de meilleurs résultats en français, le score ROUGE-L est autour de 0,38 alors que mT5 est à 0,31.",information,0.60,oui
+reunion_projet.txt,Rania,Et le temps de traitement?,information,0.60,oui
+reunion_projet.txt,Rania,"Parce que, on doit rester sous une minute pour une heure de réunion.",information,0.70,oui
+reunion_projet.txt,Yousra,"BARThez prend environ quarante secondes sur GPU pour une heure de réunion, donc ça passe.",information,0.60,oui
+reunion_projet.txt,Karim,"Ok, très bien.",information,0.60,oui
+reunion_projet.txt,Karim,"Donc on part sur BARThez pour le résumé, et on garde Mistral en option si le résultat n'est pas assez bon.",decision,0.95,oui
+reunion_projet.txt,Rania,"D'accord, ça me va.",information,0.60,oui
+reunion_projet.txt,Karim,"Yousra, tu peux préparer un petit tableau comparatif des deux modèles avant vendredi?",action,0.85,oui
+reunion_projet.txt,Yousra,"Oui, je m'en occupe.",action,0.60,oui
+reunion_projet.txt,Karim,"Deuxième point, la maquette de l'interface.",information,0.60,oui
+reunion_projet.txt,Karim,"Rania, tu en es où?",information,0.60,oui
+reunion_projet.txt,Rania,J'ai fait une première version sur Streamlit avec l'import de fichier et l'affichage du résumé.,information,0.60,oui
+reunion_projet.txt,Rania,Il manque encore le tableau des actions et le bouton d'export en PDF.,information,0.60,oui
+reunion_projet.txt,Salma,Est-ce qu'on peut ajouter une page pour l'historique des réunions?,information,0.60,oui
+reunion_projet.txt,Salma,Les utilisateurs voudront retrouver les anciennes réunions.,information,0.60,oui
+reunion_projet.txt,Karim,Oui c'est une bonne idée.,information,0.60,oui
+reunion_projet.txt,Karim,Il est décidé d'ajouter une page historique avec une recherche par mot-clé.,decision,0.70,oui
+reunion_projet.txt,Rania,Je vais ajouter le tableau des actions et l'export PDF d'ici mercredi prochain.,action,0.85,oui
+reunion_projet.txt,Salma,"Je me charge de la page historique, je peux la finir pour le 20 novembre.",action,0.85,oui
+reunion_projet.txt,Karim,Parfait.,information,0.60,oui
+reunion_projet.txt,Karim,"Troisième point, le planning de la démo devant l'encadrant.",information,0.60,oui
+reunion_projet.txt,Salma,L'encadrant est disponible le 2 décembre ou le 9 décembre.,information,0.60,oui
+reunion_projet.txt,Rania,"Le 2 décembre c'est un peu juste, on n'aura pas fini l'évaluation sur le corpus AMI.",information,0.60,oui
+reunion_projet.txt,Karim,"Bon, on valide le 9 décembre pour la démo, tout le monde est d'accord?",decision,0.95,oui
+reunion_projet.txt,Yousra,"Oui, c'est validé pour moi.",information,0.85,oui
+reunion_projet.txt,Karim,"Salma, tu peux envoyer l'invitation à l'encadrant demain?",action,0.85,oui
+reunion_projet.txt,Salma,Ok pas de souci.,information,0.60,oui
+reunion_projet.txt,Karim,Et il faut que Yousra lance l'évaluation ROUGE sur le corpus AMI d'ici la fin du mois.,action,0.85,oui
+reunion_projet.txt,Yousra,"Ça marche, je lance ça ce week-end.",action,0.60,oui
+reunion_projet.txt,Karim,"Super, merci à tous, on se revoit la semaine prochaine.",information,0.60,oui

@@ -1,0 +1,27 @@
+{
+  "transcript": "test_03.txt",
+  "meeting_date": "2026-11-16",
+  "title": "E-commerce — logistique de fin d'année",
+  "reference_summary": "Les commandes ont augmenté de quarante pour cent depuis le Black Friday et le transporteur actuel ne suit plus. L'équipe signe avec MaroColis, plus cher mais plus rapide, pour décembre. L'entrepôt étant plein, un local supplémentaire sera loué pour deux mois. Deux préparateurs de commandes seront recrutés.",
+  "decisions": [
+    "On signe avec MaroColis pour décembre",
+    "On loue un local supplémentaire pour deux mois"
+  ],
+  "actions": [
+    {
+      "task": "Envoyer le contrat signé à MaroColis",
+      "owner": "Amal",
+      "deadline_date": "2026-11-17"
+    },
+    {
+      "task": "Chercher un local près de l'entrepôt",
+      "owner": "Younes",
+      "deadline_date": "2026-11-20"
+    },
+    {
+      "task": "Publier l'offre pour deux préparateurs",
+      "owner": "Younes",
+      "deadline_date": "2026-11-21"
+    }
+  ]
+}

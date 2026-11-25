@@ -1,0 +1,147 @@
+source,speaker,text,label
+train_01,Sofia,"Bonjour à tous, l'objectif de ce matin est de préparer le lancement de la version 2.",information
+train_01,Adam,"Les tests de charge sont terminés, le serveur tient deux mille utilisateurs simultanés.",information
+train_01,Sofia,"Très bien, et côté design, où en est-on ?",information
+train_01,Lina,"Il reste deux écrans à finaliser, l'onboarding et la page de paiement.",information
+train_01,Sofia,"Bon, on retient la date du 1er décembre pour le lancement.",decision
+train_01,Adam,Ça me paraît jouable si le design est prêt à temps.,information
+train_01,Sofia,"Lina, tu termines les deux écrans d'ici jeudi ?",action
+train_01,Lina,"Oui, je m'en occupe.",action
+train_01,Adam,Je vais préparer le plan de retour arrière en cas de problème.,action
+train_01,Sofia,"Pour la communication, on avait parlé d'une vidéo de démonstration.",information
+train_01,Lina,"Une vidéo coûte cher, environ cinq mille dirhams avec un prestataire.",information
+train_01,Sofia,"Finalement on fait la vidéo en interne, pas de prestataire.",decision
+train_01,Sofia,Lina se charge du script de la vidéo pour lundi prochain.,action
+train_01,Adam,On pourrait aussi publier un article de blog le jour du lancement.,information
+train_01,Sofia,"Bonne idée, on en parlera à la prochaine réunion.",information
+train_01,Sofia,"Adam, pense à mettre à jour la documentation de l'API avant le lancement.",action
+train_01,Sofia,"Merci à tous, bonne journée.",information
+train_02,M. Berrada,"Bonjour, nous allons parler des examens blancs et de la sortie scolaire.",information
+train_02,Mme Alami,Les examens blancs de mathématiques sont prévus pour la semaine du 7 décembre.,information
+train_02,M. Chraibi,"En physique, nous n'avons pas encore fixé de date.",information
+train_02,M. Berrada,Il est décidé que tous les examens blancs auront lieu la même semaine.,decision
+train_02,M. Berrada,"Monsieur Chraibi, vous pouvez envoyer votre sujet avant le 30 novembre ?",action
+train_02,M. Chraibi,"Entendu, je vous l'envoie avant la fin du mois.",action
+train_02,Mme Alami,"Pour la sortie au musée, nous avons trente-deux élèves inscrits.",information
+train_02,M. Berrada,Le bus coûte mille deux cents dirhams pour la journée.,information
+train_02,M. Berrada,Nous validons la sortie au musée pour le vendredi 11 décembre.,decision
+train_02,Mme Alami,Je me charge de collecter les autorisations parentales.,action
+train_02,M. Berrada,Il faut réserver le bus cette semaine.,action
+train_02,M. Chraibi,Je peux m'occuper de la réservation du bus.,action
+train_02,Mme Alami,Est-ce que les parents accompagnateurs sont déjà prévus ?,information
+train_02,M. Berrada,"Pas encore, on verra selon les réponses.",information
+train_02,M. Berrada,Merci à tous pour votre présence.,information
+train_03,Dr Haddad,"Bonjour, on fait le point sur les gardes du mois de décembre.",information
+train_03,Inf. Rachidi,Nous manquons de deux infirmières pour les nuits du week-end.,information
+train_03,Dr Haddad,C'est un problème qui revient chaque année pendant les fêtes.,information
+train_03,Dr Haddad,Nous allons faire appel à l'agence d'intérim pour les nuits de décembre.,decision
+train_03,Dr Haddad,"Madame Rachidi, contactez l'agence avant mercredi s'il vous plaît.",action
+train_03,Inf. Rachidi,"D'accord, je les appelle demain matin.",action
+train_03,Dr Tazi,Le nouveau moniteur cardiaque est arrivé mais personne n'est formé.,information
+train_03,Dr Tazi,Je vais organiser une formation pour l'équipe la semaine prochaine.,action
+train_03,Dr Haddad,Combien de temps dure la formation ?,information
+train_03,Dr Tazi,Environ deux heures par groupe.,information
+train_03,Dr Haddad,"Ok, la formation sera obligatoire pour toute l'équipe de jour.",decision
+train_03,Dr Haddad,"Docteur Tazi, merci d'envoyer le planning des groupes à tout le monde.",action
+train_03,Inf. Rachidi,Les patients se plaignent aussi du temps d'attente aux urgences.,information
+train_03,Dr Haddad,On abordera ce point à la réunion de direction.,information
+train_03,Dr Haddad,Bon courage à tous.,information
+train_04,Karim,"Salut tout le monde, on doit organiser le tournoi de football du mois prochain.",information
+train_04,Hiba,"On a déjà douze équipes inscrites, il en manque quatre.",information
+train_04,Omar,Le terrain municipal est libre le 12 et le 19 décembre.,information
+train_04,Karim,On choisit le samedi 19 décembre pour le tournoi.,decision
+train_04,Hiba,Il faut encore trouver un sponsor pour les maillots.,information
+train_04,Karim,"Hiba, tu peux contacter la boulangerie du quartier pour le sponsoring ?",action
+train_04,Hiba,"Pas de problème, je passe les voir demain.",action
+train_04,Omar,Je m'occupe de la réservation du terrain auprès de la mairie.,action
+train_04,Karim,"L'année dernière, on avait eu des problèmes d'arbitrage.",information
+train_04,Karim,"Cette année, on prend des arbitres officiels de la ligue.",decision
+train_04,Omar,Ça coûte trois cents dirhams par match.,information
+train_04,Karim,"Omar, tu me fais un budget complet pour vendredi.",action
+train_04,Hiba,Et les inscriptions des quatre équipes manquantes ?,information
+train_04,Karim,Je publie une annonce sur la page Facebook ce soir.,action
+train_04,Karim,"Merci les amis, à la semaine prochaine.",information
+train_05,Nora,On a reçu les retours du client sur la maquette du site e-commerce.,information
+train_05,Yassir,Ils trouvent la page d'accueil trop chargée.,information
+train_05,Nora,"Ils veulent aussi un mode sombre, mais ce n'était pas prévu dans le devis.",information
+train_05,Nora,"Le mode sombre sera facturé en supplément, c'est acté.",decision
+train_05,Nora,"Yassir, tu simplifies la page d'accueil pour jeudi.",action
+train_05,Yassir,"Ok, je fais une nouvelle version d'ici jeudi.",action
+train_05,Meriem,Le client demande aussi quand le site sera en ligne.,information
+train_05,Nora,"Avec les corrections, on peut viser la mi-décembre.",information
+train_05,Nora,On annonce au client une mise en ligne le 15 décembre.,decision
+train_05,Meriem,Je rédige le devis pour le mode sombre aujourd'hui.,action
+train_05,Nora,Merci d'envoyer le devis au client avant demain midi.,action
+train_05,Yassir,Est-ce qu'on garde la même police d'écriture ?,information
+train_05,Nora,"Je pense que oui, mais demande-leur leur avis.",information
+train_05,Nora,Je vais appeler le client pour confirmer le planning.,action
+train_05,Nora,"Parfait, merci à vous.",information
+train_06,Ing. Fassi,"Bonjour, point sur l'avancement du bâtiment B.",information
+train_06,Chef Amrani,Le gros œuvre est terminé au troisième étage.,information
+train_06,Chef Amrani,On a eu deux jours de retard à cause de la pluie.,information
+train_06,Ing. Fassi,La livraison du béton pour le quatrième étage est prévue mercredi.,information
+train_06,Ing. Fassi,On maintient la date de fin du gros œuvre au 18 décembre.,decision
+train_06,Ing. Fassi,"Monsieur Amrani, renforcez l'équipe avec trois ouvriers cette semaine.",action
+train_06,Chef Amrani,Je contacte l'entreprise sous-traitante aujourd'hui.,action
+train_06,Mme Kabbaj,L'inspection de sécurité a relevé l'absence de garde-corps au troisième.,information
+train_06,Ing. Fassi,"Personne ne monte au troisième sans garde-corps, c'est non négociable.",decision
+train_06,Chef Amrani,Je fais installer les garde-corps demain.,action
+train_06,Mme Kabbaj,Je vais refaire une inspection jeudi après-midi.,action
+train_06,Ing. Fassi,Le client viendra visiter le chantier en fin de mois.,information
+train_06,Ing. Fassi,Il faut nettoyer le site avant la visite du client.,action
+train_06,Ing. Fassi,"Merci, on se revoit lundi.",information
+train_07,Mehdi,"Bienvenue au sprint planning, on commence le sprint 8 aujourd'hui.",information
+train_07,Salma,"Le sprint 7 s'est bien passé, on a livré neuf tickets sur dix.",information
+train_07,Mehdi,Le ticket manquant concerne la connexion avec Google.,information
+train_07,Mehdi,On reprend le ticket de connexion Google en priorité dans ce sprint.,decision
+train_07,Mehdi,"Salma, tu prends le ticket de connexion Google.",action
+train_07,Salma,"D'accord, je le termine pour mercredi.",action
+train_07,Imad,J'ai remarqué que les tests automatiques prennent vingt minutes.,information
+train_07,Mehdi,C'est beaucoup trop long pour chaque commit.,information
+train_07,Mehdi,On passe les tests lents en exécution nocturne.,decision
+train_07,Imad,Je configure l'exécution nocturne dans la CI cette semaine.,action
+train_07,Salma,Est-ce qu'on fait la démo au client à la fin du sprint ?,information
+train_07,Mehdi,"Oui, la démo est fixée au vendredi 27 novembre.",decision
+train_07,Mehdi,Je prépare les slides de la démo.,action
+train_07,Mehdi,"C'est bon pour moi, bon sprint à tous.",information
+train_08,Président,"Bonsoir, nous allons traiter l'éclairage public et le marché hebdomadaire.",information
+train_08,Mme Idrissi,Trois lampadaires de la rue principale sont en panne depuis un mois.,information
+train_08,M. Lahlou,Les habitants ont peur de rentrer tard le soir.,information
+train_08,Président,Le conseil adopte à l'unanimité la demande de réparation urgente.,decision
+train_08,Président,"Madame Idrissi, rédigez le courrier à la commune pour mardi.",action
+train_08,Mme Idrissi,Je le rédige ce soir et je vous l'envoie.,action
+train_08,M. Lahlou,"Pour le marché, les commerçants demandent plus de places.",information
+train_08,Président,Le parking de l'école pourrait servir le dimanche.,information
+train_08,Président,Nous retenons le parking de l'école pour agrandir le marché.,decision
+train_08,M. Lahlou,Je rencontre le directeur de l'école jeudi pour avoir son accord.,action
+train_08,Mme Idrissi,Il faudra aussi prévoir des poubelles supplémentaires.,information
+train_08,Président,"Monsieur Lahlou, ajoutez ce point à votre rendez-vous avec le directeur.",action
+train_08,Président,"Merci à tous, la séance est levée.",information
+train_09,Rachid,"Salam, lyouma ghadi nhedro 3la la carte jdida w 3la les horaires.",information
+train_09,Zineb,"Les clients kaybghiw plats healthy ktar, b7al les salades.",information
+train_09,Rachid,W chno 9alou 3la le tajine dyal l-7ut ?,information
+train_09,Zineb,"Bzaf dyal les clients 3jbhom, walakin ghali chwiya.",information
+train_09,Rachid,"Safi, ttafa9na nzidou 3 salades f la carte.",decision
+train_09,Rachid,9rrna n9ssou le prix dyal le tajine l 70 dh.,decision
+train_09,Rachid,"Zineb, khassek tsifti la carte jdida l l-imprimerie 9bel jem3a.",action
+train_09,Zineb,"Wakha, ghadi nsiftha ghedda.",action
+train_09,Hamid,"Les weekends kayn bzaf dyal l-khdma, w 7na ghir joj f la cuisine.",information
+train_09,Rachid,Ana ghadi nqelleb 3la cuisinier zayed had simana.,action
+train_09,Hamid,W ila ma lqinach ?,information
+train_09,Rachid,Nchoufou mn b3d.,information
+train_09,Rachid,"Hamid, dir lia lista dyal les produits li khasshom 9bel l-khmis.",action
+train_09,Rachid,Merci l-kolchi.,information
+train_10,Laura,"Good morning everyone, let's review the mobile app roadmap.",information
+train_10,Ben,The beta testers reported crashes on older Android phones.,information
+train_10,Laura,How many users are affected?,information
+train_10,Ben,Around eight percent of our active users.,information
+train_10,Laura,We decided to drop support for Android versions older than ten.,decision
+train_10,Laura,"Ben, can you update the minimum version in the store listing by Friday?",action
+train_10,Ben,"Sure, I'll do it tomorrow.",action
+train_10,Chloe,Marketing wants the new onboarding before the holiday campaign.,information
+train_10,Laura,We agreed to ship the new onboarding on December 10.,decision
+train_10,Chloe,I will prepare the release notes next week.,action
+train_10,Laura,Please send the campaign brief to the design team today.,action
+train_10,Ben,Should we also translate the app into Arabic?,information
+train_10,Laura,"Maybe next quarter, let's discuss it later.",information
+train_10,Laura,Thanks everyone.,information

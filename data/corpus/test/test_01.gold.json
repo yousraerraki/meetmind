@@ -1,0 +1,23 @@
+{
+  "transcript": "test_01.txt",
+  "meeting_date": "2026-11-16",
+  "title": "Cabinet comptable — clôture annuelle",
+  "reference_summary": "Le cabinet prépare la clôture des comptes de quarante clients avant le 31 décembre. Pour éviter le retard de l'an dernier, dû aux factures tardives, la date limite de dépôt des factures est fixée au 5 décembre et les clients en seront informés. Le logiciel de relance automatique est reporté à l'année prochaine faute de budget. Les heures supplémentaires sont autorisées jusqu'à la fin de la clôture.",
+  "decisions": [
+    "La date limite de dépôt des factures est fixée au 5 décembre",
+    "Le logiciel de relance est reporté à l'année prochaine",
+    "Les heures supplémentaires sont autorisées jusqu'à la fin de la clôture"
+  ],
+  "actions": [
+    {
+      "task": "Informer tous les clients de la nouvelle date",
+      "owner": "Leila",
+      "deadline_date": "2026-11-18"
+    },
+    {
+      "task": "Préparer la répartition des dossiers par collaborateur",
+      "owner": "M. Ouazzani",
+      "deadline_date": "2026-11-20"
+    }
+  ]
+}

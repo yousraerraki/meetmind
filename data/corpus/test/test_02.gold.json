@@ -1,0 +1,27 @@
+{
+  "transcript": "test_02.txt",
+  "meeting_date": "2026-11-16",
+  "title": "Université — organisation des soutenances",
+  "reference_summary": "Les enseignants planifient les soutenances de vingt-quatre binômes. Pour éviter des journées trop chargées, les soutenances se tiendront sur trois jours, du 14 au 16 décembre, dans trois salles équipées. Aucun retard ne sera accepté pour les rapports. Le planning sera publié sur la plateforme et les jurys seront composés par le professeur El Amrani.",
+  "decisions": [
+    "Les soutenances sont organisées sur trois jours, du 14 au 16 décembre",
+    "Aucun retard ne sera accepté pour les rapports"
+  ],
+  "actions": [
+    {
+      "task": "Réserver les salles auprès de la scolarité",
+      "owner": "Dr. Naciri",
+      "deadline_date": "2026-11-19"
+    },
+    {
+      "task": "Publier le planning des soutenances sur la plateforme",
+      "owner": "Pr. Saidi",
+      "deadline_date": "2026-12-04"
+    },
+    {
+      "task": "Composer les jurys",
+      "owner": "Pr. El Amrani",
+      "deadline_date": null
+    }
+  ]
+}

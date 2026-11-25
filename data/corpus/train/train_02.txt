@@ -1,0 +1,15 @@
+M. Berrada : Bonjour, nous allons parler des examens blancs et de la sortie scolaire.
+Mme Alami : Les examens blancs de mathématiques sont prévus pour la semaine du 7 décembre.
+M. Chraibi : En physique, nous n'avons pas encore fixé de date.
+M. Berrada : Il est décidé que tous les examens blancs auront lieu la même semaine.
+M. Berrada : Monsieur Chraibi, vous pouvez envoyer votre sujet avant le 30 novembre ?
+M. Chraibi : Entendu, je vous l'envoie avant la fin du mois.
+Mme Alami : Pour la sortie au musée, nous avons trente-deux élèves inscrits.
+M. Berrada : Le bus coûte mille deux cents dirhams pour la journée.
+M. Berrada : Nous validons la sortie au musée pour le vendredi 11 décembre.
+Mme Alami : Je me charge de collecter les autorisations parentales.
+M. Berrada : Il faut réserver le bus cette semaine.
+M. Chraibi : Je peux m'occuper de la réservation du bus.
+Mme Alami : Est-ce que les parents accompagnateurs sont déjà prévus ?
+M. Berrada : Pas encore, on verra selon les réponses.
+M. Berrada : Merci à tous pour votre présence.

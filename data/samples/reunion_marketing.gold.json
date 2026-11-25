@@ -1,0 +1,17 @@
+{
+  "transcript": "reunion_marketing.txt",
+  "meeting_date": "2026-11-17",
+  "reference_summary": "La réunion portait sur la campagne de lancement de l'application mobile et sur le budget. 18 000 des 30 000 dirhams du trimestre ont été dépensés ; la publicité Instagram a coûté plus que prévu pour environ 1 200 inscriptions, alors que TikTok fonctionne mieux chez les 18-25 ans. L'équipe a décidé de réduire Instagram au profit de TikTok. À cause d'un bug de paiement bloquant, le lancement est fixé au 8 décembre. Un communiqué de presse est prévu et le partenariat avec des influenceurs est reporté à janvier faute de budget.",
+  "decisions": [
+    "Réduire Instagram et mettre le reste du budget publicitaire sur TikTok",
+    "Le lancement est fixé au 8 décembre",
+    "Le partenariat avec des influenceurs est reporté à janvier"
+  ],
+  "actions": [
+    {"task": "Préparer trois vidéos courtes pour TikTok", "owner": "Leila", "deadline_date": "2026-11-25"},
+    {"task": "Corriger le bug de paiement", "owner": "Mehdi", "deadline_date": "2026-12-01"},
+    {"task": "Faire tester l'application par cinq utilisateurs", "owner": "Mehdi", "deadline_date": "2026-11-23"},
+    {"task": "Rédiger le communiqué de presse", "owner": "Omar", "deadline_date": "2026-12-04"},
+    {"task": "Envoyer le compte rendu", "owner": "Nadia", "deadline_date": null}
+  ]
+}

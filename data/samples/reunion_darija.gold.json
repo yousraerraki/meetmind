@@ -1,0 +1,14 @@
+{
+  "transcript": "reunion_darija.txt",
+  "meeting_date": "2026-11-17",
+  "reference_summary": "L'équipe a parlé de la livraison de l'application et des demandes du client, qui veut changer la couleur de l'interface et ajouter une page contact. La page contact n'est pas dans le contrat. Ils ont décidé de changer la couleur et de facturer la page contact à part. La livraison est fixée au 30 novembre.",
+  "decisions": [
+    "La couleur nbeddlouha, la page contact ghadi nfactouriwha à part",
+    "La livraison f 30 novembre"
+  ],
+  "actions": [
+    {"task": "Sifti devis l le client", "owner": "Sara", "deadline_date": "2026-11-18"},
+    {"task": "Beddel les couleurs", "owner": "Karim", "deadline_date": "2026-11-23"},
+    {"task": "3ayet l le client bach nconfirmi la date", "owner": "Amine", "deadline_date": null}
+  ]
+}

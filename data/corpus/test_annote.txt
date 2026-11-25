@@ -1,0 +1,84 @@
+# Corpus synthétique MeetMind — partie TEST (5 réunions)
+# Ne pas utiliser pour l'entraînement ni pour régler les règles.
+# Format identique à train_annote.txt. Les références (résumé, décisions, actions)
+# sont dans test_references.json. Date de toutes les réunions : lundi 16/11/2026.
+
+### test_01 | Cabinet comptable — clôture annuelle
+I|Mme Bennis : Bonjour, nous devons organiser la clôture des comptes de fin d'année.
+I|M. Ouazzani : Nous avons quarante clients à clôturer avant le 31 décembre.
+I|Mme Bennis : L'année dernière, nous avions terminé avec une semaine de retard.
+I|Leila : Le principal problème, c'était les factures reçues trop tard.
+D|Mme Bennis : À partir de cette année, la date limite de dépôt des factures est fixée au 5 décembre.
+A|Mme Bennis : Leila, informez tous les clients de cette nouvelle date d'ici mercredi.
+A|Leila : Très bien, j'envoie un e-mail groupé dès demain.
+I|M. Ouazzani : Il faudrait peut-être aussi un logiciel de relance automatique.
+I|Mme Bennis : C'est intéressant, mais le budget est déjà engagé pour cette année.
+D|Mme Bennis : Le logiciel de relance est reporté à l'année prochaine.
+A|Mme Bennis : Monsieur Ouazzani, préparez la répartition des dossiers par collaborateur pour vendredi.
+A|M. Ouazzani : Je m'en charge.
+I|Leila : Est-ce qu'on prévoit des heures supplémentaires en décembre ?
+D|Mme Bennis : Oui, les heures supplémentaires sont autorisées jusqu'à la fin de la clôture.
+I|Mme Bennis : Merci à tous.
+
+### test_02 | Université — organisation des soutenances
+I|Pr. El Amrani : Bonjour, il faut planifier les soutenances des projets de fin d'année.
+I|Pr. Saidi : Nous avons vingt-quatre binômes cette année.
+I|Pr. El Amrani : Chaque soutenance dure trente minutes avec les questions.
+I|Pr. Saidi : Sur deux jours, ça fait douze soutenances par jour, c'est beaucoup.
+D|Pr. El Amrani : Nous organisons les soutenances sur trois jours, du 14 au 16 décembre.
+I|Dr. Naciri : Il faudra au moins trois salles équipées de vidéoprojecteurs.
+A|Pr. El Amrani : Docteur Naciri, pourriez-vous réserver les salles auprès de la scolarité ?
+A|Dr. Naciri : Oui, je passe à la scolarité jeudi.
+I|Pr. Saidi : Les étudiants demandent aussi s'ils peuvent rendre le rapport en retard.
+D|Pr. El Amrani : Non, aucun retard ne sera accepté pour les rapports.
+A|Pr. Saidi : Je publie le planning des soutenances sur la plateforme avant le 4 décembre.
+I|Dr. Naciri : Et pour les jurys, qui fait la répartition ?
+A|Pr. El Amrani : Je m'occupe de la composition des jurys.
+I|Pr. El Amrani : Merci pour cette réunion efficace.
+
+### test_03 | E-commerce — logistique de fin d'année
+I|Nabil : Salut l'équipe, on parle des livraisons pour la période des fêtes.
+I|Amal : Les commandes ont augmenté de quarante pour cent depuis le Black Friday.
+I|Nabil : Notre transporteur actuel n'arrive plus à suivre.
+I|Amal : J'ai reçu deux offres, une de Fast Delivery et une de MaroColis.
+I|Nabil : MaroColis est un peu plus cher mais livre en vingt-quatre heures.
+D|Nabil : Ok, on signe avec MaroColis pour décembre.
+A|Nabil : Amal, envoie-leur le contrat signé demain.
+A|Amal : Ça marche, je le fais demain matin.
+I|Younes : L'entrepôt est presque plein, on stocke des cartons dans le couloir.
+D|Nabil : On loue un local supplémentaire pour deux mois.
+A|Younes : Je cherche un local près de l'entrepôt d'ici vendredi.
+I|Amal : Il faudra aussi des préparateurs de commandes en plus.
+A|Nabil : Younes, publie l'offre pour deux préparateurs ce week-end.
+I|Nabil : Parfait, on fait le point lundi prochain.
+
+### test_04 | Darija — équipe marketing
+I|Ilyas : Salam l'équipe, khassna nwjjdou la campagne dyal Ramadan.
+I|Sanaa : 3ndna budget dyal 20 000 dh l had la campagne.
+I|Ilyas : L3am li fat khdmna b les influenceurs, w ma jabouch bzaf d les ventes.
+I|Sanaa : Les pubs f Instagram w TikTok kanu a7ssan.
+D|Ilyas : Safi, 9rrna nkhdmo ghir b les pubs had l3am, bla influenceurs.
+A|Ilyas : Sanaa, khassek twjjdi le planning dyal les pubs 9bel jem3a.
+A|Sanaa : Wakha, ghadi nwjjdou had simana.
+I|Ayoub : W les visuels, chkoun ghadi ydirhom ?
+A|Ayoub : Ana ghadi nsawb les visuels w nsiftom lik tnin.
+D|Ilyas : Ttafa9na tani nbdaw la campagne 15 jour 9bel Ramadan.
+I|Sanaa : Wach n9dro nzidou chi promo f le site ?
+I|Ilyas : Nchoufou had l-mas2ala f la réunion jaya.
+I|Ilyas : Yallah, bon courage.
+
+### test_05 | Association humanitaire — collecte de couvertures
+I|Hanane : Bonsoir à tous, l'hiver arrive et les familles du douar ont besoin de couvertures.
+I|Said : L'année dernière, on avait distribué trois cents couvertures.
+I|Hanane : Cette année, on a recensé cent vingt familles.
+D|Hanane : Notre objectif est fixé à quatre cents couvertures.
+I|Said : Il nous faut environ vingt mille dirhams.
+A|Hanane : Said, lance la cagnotte en ligne dès cette semaine.
+A|Said : D'accord, je la mets en ligne mercredi.
+I|Fatine : Le supermarché du centre accepte d'accueillir un point de collecte.
+D|Hanane : On accepte la proposition du supermarché.
+A|Fatine : Je m'occupe de l'affiche pour le point de collecte.
+A|Hanane : Fatine, il faudrait aussi trouver un camion pour la distribution avant la fin du mois.
+I|Said : La distribution pourrait se faire le dernier week-end de décembre.
+D|Hanane : C'est validé, la distribution aura lieu le 26 décembre.
+I|Hanane : Merci à tous pour votre engagement.

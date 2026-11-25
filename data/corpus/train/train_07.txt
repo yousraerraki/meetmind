@@ -1,0 +1,14 @@
+Mehdi : Bienvenue au sprint planning, on commence le sprint 8 aujourd'hui.
+Salma : Le sprint 7 s'est bien passé, on a livré neuf tickets sur dix.
+Mehdi : Le ticket manquant concerne la connexion avec Google.
+Mehdi : On reprend le ticket de connexion Google en priorité dans ce sprint.
+Mehdi : Salma, tu prends le ticket de connexion Google.
+Salma : D'accord, je le termine pour mercredi.
+Imad : J'ai remarqué que les tests automatiques prennent vingt minutes.
+Mehdi : C'est beaucoup trop long pour chaque commit.
+Mehdi : On passe les tests lents en exécution nocturne.
+Imad : Je configure l'exécution nocturne dans la CI cette semaine.
+Salma : Est-ce qu'on fait la démo au client à la fin du sprint ?
+Mehdi : Oui, la démo est fixée au vendredi 27 novembre.
+Mehdi : Je prépare les slides de la démo.
+Mehdi : C'est bon pour moi, bon sprint à tous.

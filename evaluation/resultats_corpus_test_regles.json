@@ -1,0 +1,216 @@
+{
+  "global": {
+    "n_reunions": 5,
+    "rougeL_moyen": 0.357,
+    "f1_decisions_moyen": 0.533,
+    "f1_actions_moyen": 0.32,
+    "temps_moyen_s": 0.34,
+    "objectif_rougeL_0.35": "✅",
+    "objectif_f1_actions_0.75": "❌",
+    "classification_phrases": {
+      "decision": {
+        "precision": 1.0,
+        "rappel": 0.417,
+        "f1": 0.588
+      },
+      "action": {
+        "precision": 0.778,
+        "rappel": 0.368,
+        "f1": 0.5
+      }
+    }
+  },
+  "reunions": [
+    {
+      "fichier": "test_01.gold.json",
+      "temps_s": 1.7,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.561,
+        "rouge2": 0.438,
+        "rougeL": 0.542
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 0.333,
+        "f1": 0.5
+      },
+      "actions": {
+        "precision": 0.0,
+        "rappel": 0.0,
+        "f1": 0.0
+      },
+      "details": {
+        "actions_non_trouvees": [
+          "Informer tous les clients de la nouvelle date",
+          "Préparer la répartition des dossiers par collaborateur"
+        ],
+        "actions_en_trop": [],
+        "decisions_non_trouvees": [
+          "La date limite de dépôt des factures est fixée au 5 décembre",
+          "Les heures supplémentaires sont autorisées jusqu'à la fin de la clôture"
+        ],
+        "decisions_en_trop": []
+      }
+    },
+    {
+      "fichier": "test_02.gold.json",
+      "temps_s": 0.0,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.43,
+        "rouge2": 0.242,
+        "rougeL": 0.366
+      },
+      "decisions": {
+        "precision": 0.0,
+        "rappel": 0.0,
+        "f1": 0.0
+      },
+      "actions": {
+        "precision": 0.5,
+        "rappel": 0.333,
+        "f1": 0.4,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [
+          "Réserver les salles auprès de la scolarité",
+          "Publier le planning des soutenances sur la plateforme"
+        ],
+        "actions_en_trop": [
+          "Planifier les soutenances des projets de fin d'année"
+        ],
+        "decisions_non_trouvees": [
+          "Les soutenances sont organisées sur trois jours, du 14 au 16 décembre",
+          "Aucun retard ne sera accepté pour les rapports"
+        ],
+        "decisions_en_trop": []
+      }
+    },
+    {
+      "fichier": "test_03.gold.json",
+      "temps_s": 0.0,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.319,
+        "rouge2": 0.13,
+        "rougeL": 0.234
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 0.5,
+        "f1": 0.667
+      },
+      "actions": {
+        "precision": 0.0,
+        "rappel": 0.0,
+        "f1": 0.0
+      },
+      "details": {
+        "actions_non_trouvees": [
+          "Envoyer le contrat signé à MaroColis",
+          "Chercher un local près de l'entrepôt",
+          "Publier l'offre pour deux préparateurs"
+        ],
+        "actions_en_trop": [],
+        "decisions_non_trouvees": [
+          "On loue un local supplémentaire pour deux mois"
+        ],
+        "decisions_en_trop": []
+      }
+    },
+    {
+      "fichier": "test_04.gold.json",
+      "temps_s": 0.0,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.232,
+        "rouge2": 0.06,
+        "rougeL": 0.203
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 1.0,
+        "f1": 1.0
+      },
+      "actions": {
+        "precision": 0.667,
+        "rappel": 1.0,
+        "f1": 0.8,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [],
+        "actions_en_trop": [
+          "Salam l'équipe, khassna nwjjdou la campagne dyal Ramadan"
+        ],
+        "decisions_non_trouvees": [],
+        "decisions_en_trop": []
+      }
+    },
+    {
+      "fichier": "test_05.gold.json",
+      "temps_s": 0.0,
+      "modeles": {
+        "segmentation": "TF-IDF + TextTiling (fallback)",
+        "classification": "règles linguistiques (fallback)",
+        "ner": "règles + liste des participants (fallback)",
+        "resume": "TextRank extractif (fallback)"
+      },
+      "resume": {
+        "rouge1": 0.54,
+        "rouge2": 0.306,
+        "rougeL": 0.44
+      },
+      "decisions": {
+        "precision": 1.0,
+        "rappel": 0.333,
+        "f1": 0.5
+      },
+      "actions": {
+        "precision": 0.5,
+        "rappel": 0.333,
+        "f1": 0.4,
+        "responsable_correct": 1.0,
+        "echeance_correcte": 1.0
+      },
+      "details": {
+        "actions_non_trouvees": [
+          "Lancer la cagnotte en ligne",
+          "Trouver un camion pour la distribution"
+        ],
+        "actions_en_trop": [
+          "S'occuper de la mets en ligne"
+        ],
+        "decisions_non_trouvees": [
+          "L'objectif est fixé à quatre cents couvertures",
+          "On accepte la proposition du supermarché"
+        ],
+        "decisions_en_trop": []
+      }
+    }
+  ]
+}

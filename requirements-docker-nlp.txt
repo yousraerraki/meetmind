@@ -1,0 +1,11 @@
+# Modèles pour l'image Docker (CPU, sans GPU) — version allégée de requirements-nlp.txt :
+# pas de pyannote (tire torch CUDA, plusieurs Go), pas d'outils d'entraînement.
+# torch CPU est installé AVANT ce fichier dans le Dockerfile.
+transformers>=4.40
+sentencepiece>=0.2
+protobuf>=4.25
+sentence-transformers>=2.7
+scikit-learn>=1.4
+spacy>=3.7
+nltk>=3.8
+openai-whisper>=20231117

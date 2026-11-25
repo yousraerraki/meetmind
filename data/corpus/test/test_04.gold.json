@@ -1,0 +1,22 @@
+{
+  "transcript": "test_04.txt",
+  "meeting_date": "2026-11-16",
+  "title": "Darija — équipe marketing",
+  "reference_summary": "L'équipe prépare la campagne de Ramadan avec un budget de 20 000 dirhams. Comme les influenceurs ont peu rapporté l'an dernier, la campagne utilisera uniquement des publicités Instagram et TikTok. Elle commencera quinze jours avant Ramadan. Sanaa prépare le planning des publicités et Ayoub les visuels.",
+  "decisions": [
+    "Nkhdmo ghir b les pubs had l3am, bla influenceurs",
+    "Nbdaw la campagne 15 jour 9bel Ramadan"
+  ],
+  "actions": [
+    {
+      "task": "Twjjdi le planning dyal les pubs",
+      "owner": "Sanaa",
+      "deadline_date": "2026-11-20"
+    },
+    {
+      "task": "Nsawb les visuels w nsiftom",
+      "owner": "Ayoub",
+      "deadline_date": "2026-11-23"
+    }
+  ]
+}
