@@ -26,6 +26,8 @@ La réunion peut être en **français**, en **anglais** ou en **darija**.
 - **Export** en PDF, Word ou texte, et **envoi par e-mail** aux participants (SMTP).
 - **Tout tourne en local**. Les données de réunion ne quittent pas la machine.
 
+![Enregistrement au micro](docs/enregistrement.png)
+
 ![Suivi des actions](docs/suivi_actions.png)
 
 ## Stack technique
